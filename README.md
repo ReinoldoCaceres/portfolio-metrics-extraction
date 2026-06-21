@@ -76,8 +76,11 @@ with no key; in production that cache is also the audit trail and the cost contr
 - `outputs/metrics_long.csv` — one row per (company, period, metric) with value, unit, currency,
   source quote, page, source type, match type, and provenance status. The source of truth.
 - `outputs/metrics_pivot_q2_2025.csv` — the review pivot: 9 companies grouped by cohort × metric.
-  Cell legend: `~` prose · `(ftn)` footnote · `*restated` · `--` not disclosed · `n/a` not
-  applicable to this business model.
+  Cell markers (the console legend shows only the ones present in a given view): `~` found in
+  prose · `(ftn)` found in a footnote · `*restated` a restatement conflict exists · `--` in scope
+  but not disclosed this quarter · `n/a` not applicable to this business model. In the Q2 2025
+  cross-section only `~`, `--`, and `n/a` occur; `(ftn)`/`*restated` apply to periods where a
+  metric is footnote-sourced or restated.
 - `outputs/reconciliation_report.md` — the cross-check vs the manual snapshot and the restatements.
 - `review.ipynb` — a notebook that renders the pivot and the reconciliation findings.
 

@@ -39,16 +39,21 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="Portfolio metrics extraction PoC")
     ap.add_argument("--extract", action="store_true",
                     help="run live LLM extraction (needs OPENAI_API_KEY); default replays cache")
-    ap.add_argument("--data", default=str(ROOT / "data"))
-    ap.add_argument("--out", default=str(ROOT / "outputs"))
+    ap.add_argument("--data", default=str(ROOT / "data"), help="folder of PDF reports")
+    ap.add_argument("--out", default=str(ROOT / "outputs"), help="output folder for CSVs/report")
     args = ap.parse_args()
 
     pdfs = [p for p in list_pdfs(args.data) if SNAPSHOT_MARKER not in p.name]
+    if not pdfs:
+        raise SystemExit(f"error: no PDF reports found in '{args.data}'. Point --data at the folder of PDFs.")
     mode = "LIVE EXTRACTION" if args.extract else "REPLAY FROM CACHE"
     print(f"\n=== Portfolio Metrics Extraction ({mode}) ===")
     print(f"Processing {len(pdfs)} company reports (snapshot excluded -> used as cross-check oracle)\n")
 
-    records = extract_all(pdfs, force=args.extract)
+    try:
+        records = extract_all(pdfs, force=args.extract)
+    except RuntimeError as e:
+        raise SystemExit(f"error: {e}")
     recon = reconcile.load()
     rows = table.build_long_rows(records, recon)
     pivot = table.build_pivot(rows, recon)
@@ -58,7 +63,7 @@ def main() -> None:
     print("\n--- Q2 2025 portfolio cross-section (grouped by business model) ---\n")
     with pd.option_context("display.max_columns", None, "display.width", 200):
         print(pivot.to_string())
-    print("\nlegend: '~' prose  '(ftn)' footnote  '*restated' conflict  '--' not disclosed  'n/a' not applicable\n")
+    print("\n" + _legend(pivot) + "\n")
 
     # ---- reconciliation report ----
     xc = reconcile.cross_check(rows, recon)
@@ -84,6 +89,17 @@ def main() -> None:
         print(f"  MISS  {m['company_key']}/{m['metric']}: expected {m['expected']}, got {m['got']}  {m['note']}")
 
     print(f"\noutputs written to {args.out}/ : metrics_long.csv, metrics_pivot_q2_2025.csv, reconciliation_report.md\n")
+
+
+def _legend(pivot: pd.DataFrame) -> str:
+    """Show only the cell markers that actually appear in this cross-section."""
+    text = " ".join(str(v) for v in pivot.values.flatten())
+    parts = []
+    for marker, meaning in [("~", "prose"), ("(ftn)", "footnote"), ("*restated", "conflict"),
+                            ("--", "not disclosed"), ("n/a", "not applicable")]:
+        if marker in text:
+            parts.append(f"'{marker}' {meaning}")
+    return "legend: " + "  ".join(parts)
 
 
 def _write_recon_report(xc, restate, outdir: Path) -> None:

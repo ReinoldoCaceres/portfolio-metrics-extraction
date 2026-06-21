@@ -1,0 +1,89 @@
+{
+  "pdf": "ClearPay_Q2_2025.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "3f99c2cdae57",
+  "pages": [
+    "ClearPay Technologies Ltd.\nQuarterly Business Review | B2B Payments & Reconciliation Platform\nPeriod: Q2 2025\nClearPay Technologies provides embedded payment rails and automated reconciliation tooling to mid-market B2B platforms in\nNorth America and the UK. Revenue is a blend of basis-point fees on processed volume, monthly platform access fees, and\nimplementation services. ClearPay holds a U.S. money transmitter licence in 42 states.\nFinancial Snapshot - Q2 2025\nMetric Q2 2025 Q1 2025\nTotal Payment Volume (TPV) $3.42B $3.11B\nNet Revenue (take-rate based) $14.8M $13.5M\nEffective Take Rate 43 bps 43 bps\nPlatform Access Revenue $2.1M $1.9M\nImplementation Services Revenue $0.4M $0.7M\nTotal Recognized Revenue $17.3M $16.1M\nGross Margin 67% 66%\nTotal Headcount 211 203\nCash & Restricted Cash $38.4M $40.1M\nCash & Restricted Cash includes $6.2M held in segregated client float accounts as required under state money transmitter\nregulations. Available operating cash at period end was $32.2M. Implementation Services revenue declined QoQ as the large Q1\nonboarding cohort moved to steady-state.\nVolume & Processing Metrics\nMetric Q2 2025 Q1 2025\nActive Connected Platforms 184 171\nTransactions Processed (QTD) 28.6M 26.1M\nAvg. Transaction Size $119.6 $119.2\nPayment Failure Rate 0.31% 0.34%\nReconciliation Accuracy Rate 99.87% 99.84%\nAPI Uptime (SLA: 99.9%) 99.94% 99.91%\nRegulatory & Compliance\nClearPay received approval for its 43rd U.S. state money transmitter licence (Georgia) during Q2 2025. Applications for New York\nand New Hampshire remain pending. UK FCA e-money institution registration is fully compliant. A routine internal audit of client\nfloat segregation completed in Q2 2025 with no material findings.\n(1) Total Payment Volume (TPV) represents gross dollar value of transactions processed; not equivalent to revenue.",
+    "(2) Effective Take Rate computed as net revenue divided by TPV; excludes platform access and implementation revenue.\n(3) Restricted Cash of $6.2M is excluded from all liquidity and runway calculations.\n(4) Payment Failure Rate reflects hard failures at authorization; excludes soft declines resolved within 24 hours.\n(5) This document does not constitute a prospectus or offer of securities."
+  ],
+  "extraction": {
+    "company_name": "ClearPay Technologies Ltd.",
+    "business_model": "payments_marketplace",
+    "reporting_period": "Q2 2025",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Total Recognized Revenue",
+        "value_raw": "$17.3M",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Total Recognized Revenue $17.3M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "67%",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Gross Margin 67%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "211",
+        "period": "Q2 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 211",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "cash",
+        "raw_label": "Cash & Restricted Cash",
+        "value_raw": "$38.4M",
+        "period": "Q2 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Cash & Restricted Cash $38.4M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": "Available operating cash at period end was $32.2M."
+      },
+      {
+        "canonical_metric": "tpv",
+        "raw_label": "Total Payment Volume (TPV)",
+        "value_raw": "$3.42B",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Total Payment Volume (TPV) $3.42B",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "take_rate",
+        "raw_label": "Effective Take Rate",
+        "value_raw": "43 bps",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Effective Take Rate 43 bps",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

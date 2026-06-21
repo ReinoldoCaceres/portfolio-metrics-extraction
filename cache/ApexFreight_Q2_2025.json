@@ -1,0 +1,65 @@
+{
+  "pdf": "ApexFreight_Q2_2025.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "bac2ccc930c4",
+  "pages": [
+    "Apex Freight Solutions Inc.\nOperating Review | Digital Freight & Last-Mile Marketplace\nPeriod: Q2 2025\nApex Freight Solutions Inc. (\"Apex Freight\") operates a digital freight and last-mile logistics marketplace connecting shippers with a\ndistributed network of carriers. Transaction-based revenue is supplemented by SaaS tool fees charged to enterprise shipper\naccounts. This report is the first issued under the Apex Freight Solutions Inc. corporate name, following the completion of our\nrebrand from FleetLink Logistics Network, effective 1 April 2025.\nNetwork & Volume Metrics\nMetric Q2 2025\nCompleted Shipments 1.28M\nActive Shippers 3,460\nActive Carriers 7,900\nOn-Time Delivery Rate 96.1%\nAverage Take Rate 11.2%\nFinancial Summary\nMetric Q2 2025\nRecognized Revenue (transaction) 8.6M\nSaaS Tool Fee Revenue 0.7M\nTotal Recognized Revenue 9.3M\nGross Margin 54%\nMarketing Spend as % of Revenue 16%\nSupport Tickets / 1,000 Shipments 14.3\nTotal Headcount 204\nTotal Recognized Revenue reached 9.3M in Q2 2025, supported by a 9% increase in completed shipments and the first material\nquarter of SaaS tool fee revenue (0.7M) from enterprise shipper accounts. Contribution margin per shipment improved to $2.30 as\nApex Freight reduced promotional incentives and improved carrier-side pricing discipline. Gross Margin expanded to 54%.\nNon-Recurring Items\n- One-time warehouse exit cost: 0.6M (Q2 2025 only)\n- Non-cash depreciation and amortisation: 0.9M\n- Rebrand-related legal and design costs of 0.2M are included in Q2 2025 operating expenses and are not separately excluded\nfrom Gross Margin.\n(1) Apex Freight Solutions Inc. is the successor entity to FleetLink Logistics Network; all historical metrics referenced in this document relate to the\nsame operating business.",
+    "(2) Recognized Revenue (transaction) and SaaS Tool Fee Revenue are disclosed separately for the first time in Q2 2025.\n(3) Contribution Margin per Shipment of $2.30 is discussed in commentary; not separately tabled.\n(4) On-Time Delivery Rate is carrier-reported with a 48-hour grace window per service agreement."
+  ],
+  "extraction": {
+    "company_name": "Apex Freight Solutions Inc.",
+    "business_model": "payments_marketplace",
+    "reporting_period": "Q2 2025",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Total Recognized Revenue",
+        "value_raw": "9.3M",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Total Recognized Revenue reached 9.3M in Q2 2025, supported by a 9% increase in completed shipments and the first material quarter of SaaS tool fee revenue (0.7M) from enterprise shipper accounts.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "54%",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Gross Margin expanded to 54%.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "204",
+        "period": "Q2 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 204",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "take_rate",
+        "raw_label": "Average Take Rate",
+        "value_raw": "11.2%",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Average Take Rate 11.2%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "pdf": "NovaCloud_Q4_2024.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "447ece474840",
+  "pages": [
+    "NovaCloud Analytics Inc.\nQ4 2024 Portfolio Update | Analytics & Observability SaaS\nPeriod: Q4 2024\nNovaCloud operates a B2B SaaS platform serving mid-market and enterprise digital businesses with analytics and observability\ntooling.\nQuarterly Operating Metrics\nMetric Q4 2024\nNet Revenue (USD) $7.2M\nEnd-of-Period ARR $29.1M\nLogo Churn Rate (LTM) 6.5%\nCash Balance $24.0M\nMonthly Net Burn ($0.88M)\nCash Runway ~27 months\nTotal Headcount 128\nPerformance Commentary\nNet Revenue of $7.2M in Q4 2024 represented an 11% increase over the prior quarter. Gross margin came in at 76%, a one-point\nimprovement versus Q3, reflecting continued cloud infrastructure efficiency gains. Net dollar retention on a trailing-twelve-month\nbasis reached 119% in Q4 2024, improving from 116% in Q3 2024, supported by strong expansion activity within existing\nenterprise accounts. New logo additions totalled 11. Expansion revenue of $1.4M was the highest in the company's history to date.\nHeadcount of 128 at quarter-end reflects selective additions in product and infrastructure engineering. Commercial team headcount\nremained flat as management evaluated the go-to-market organisational structure.\nKey Risks\n- ARR growth increasingly driven by expansion; new logo momentum remains below target.\n- Infrastructure cost efficiency gains may plateau without further architectural investment.\n- Enterprise sales cycle elongation observed in Q4; average deal time up approximately 15 days.\n(1) Net Revenue is equivalent to Recognized Revenue in prior periods; terminology updated for board reporting.\n(2) Gross Margin and Net Dollar Retention are discussed in the commentary section; not separately tabled.\n(3) Logo Churn is on a last-twelve-months (LTM) basis."
+  ],
+  "extraction": {
+    "company_name": "NovaCloud Analytics Inc.",
+    "business_model": "saas",
+    "reporting_period": "Q4 2024",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Net Revenue (USD)",
+        "value_raw": "$7.2M",
+        "period": "Q4 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Net Revenue of $7.2M in Q4 2024 represented an 11% increase over the prior quarter.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "renamed_per_footnote",
+        "note": ""
+      },
+      {
+        "canonical_metric": "arr",
+        "raw_label": "End-of-Period ARR",
+        "value_raw": "$29.1M",
+        "period": "Q4 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "End-of-Period ARR $29.1M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "logo_churn",
+        "raw_label": "Logo Churn Rate (LTM)",
+        "value_raw": "6.5%",
+        "period": "Q4 2024",
+        "period_basis": "ltm",
+        "source_quote": "Logo Churn Rate (LTM) 6.5%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "cash",
+        "raw_label": "Cash Balance",
+        "value_raw": "$24.0M",
+        "period": "Q4 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Cash Balance $24.0M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "net_burn",
+        "raw_label": "Monthly Net Burn",
+        "value_raw": "($0.88M)",
+        "period": "Q4 2024",
+        "period_basis": "monthly",
+        "source_quote": "Monthly Net Burn ($0.88M)",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "cash_runway_months",
+        "raw_label": "Cash Runway",
+        "value_raw": "~27 months",
+        "period": "Q4 2024",
+        "period_basis": "unknown",
+        "source_quote": "Cash Runway ~27 months",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "128",
+        "period": "Q4 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Headcount of 128 at quarter-end reflects selective additions in product and infrastructure engineering.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "nrr",
+        "raw_label": "Net Dollar Retention",
+        "value_raw": "119%",
+        "period": "Q4 2024",
+        "period_basis": "ltm",
+        "source_quote": "Net dollar retention on a trailing-twelve-month basis reached 119% in Q4 2024, improving from 116% in Q3 2024.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "76%",
+        "period": "Q4 2024",
+        "period_basis": "unknown",
+        "source_quote": "Gross margin came in at 76%, a one-point improvement versus Q3, reflecting continued cloud infrastructure efficiency gains.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "pdf": "FleetLink_Q4_2024.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "54cffbce9243",
+  "pages": [
+    "FleetLink Logistics Network\nOperating Review | Digital Freight & Last-Mile Marketplace\nPeriod: Q4 2024\nFleetLink operates a digital freight and last-mile logistics marketplace connecting shippers with a distributed network of carriers.\nRevenue is primarily transaction-based with additional fees from SaaS tools provided to larger accounts.\nNetwork & Volume Metrics\nMetric Q4 2024\nCompleted Shipments 1.07M\nActive Shippers 3,180\nActive Carriers 7,210\nOn-Time Delivery Rate 94.6%\nAverage Take Rate 10.8%\nFinancial Summary\nMetric Q4 2024\nPlatform Revenue (recognized) 9.0M\nGross Margin 51%\nContribution Margin / Shipment $2.10\nMarketing Spend as % of Revenue 18%\nSupport Tickets / 1,000 Shipments 15.8\nTotal Headcount 196\nPlatform Revenue of 9.0M in Q4 2024 was supported by growth in completed shipments quarter-over-quarter. Gross Margin of\n51% reflects ongoing optimisation of carrier pricing incentives. Headcount of 196 at quarter-end was primarily in product and\nengineering; commercial hiring remained selective.\n(1) On-Time Delivery Rate is carrier-reported with a 48-hour grace window per service agreement.\n(2) Contribution Margin per Shipment is post-carrier-cost, pre-overhead allocation.\n(3) Average Take Rate is computed on recognized GMV net of disputed transactions.\n(4) Non-cash D&A;: 0.9M. No changes to credit facilities in the quarter."
+  ],
+  "extraction": {
+    "company_name": "FleetLink Logistics Network",
+    "business_model": "payments_marketplace",
+    "reporting_period": "Q4 2024",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Platform Revenue (recognized)",
+        "value_raw": "9.0M",
+        "period": "Q4 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Platform Revenue (recognized) 9.0M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "51%",
+        "period": "Q4 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Gross Margin 51% reflects ongoing optimisation of carrier pricing incentives.",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "196",
+        "period": "Q4 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Headcount of 196 at quarter-end was primarily in product and engineering; commercial hiring remained selective.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "take_rate",
+        "raw_label": "Average Take Rate",
+        "value_raw": "10.8%",
+        "period": "Q4 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Average Take Rate 10.8%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

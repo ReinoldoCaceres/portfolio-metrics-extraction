@@ -1,0 +1,88 @@
+{
+  "pdf": "PeopleFlow_Q1_2025.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "0dee4a055f47",
+  "pages": [
+    "PeopleFlow HR Systems Ltd.\nQ1 2025 Investor Snapshot | Human Capital Management SaaS\nQuarter Ended: Q1 2025\nPeopleFlow provides human capital management tools to professional services firms in the UK and Ireland, spanning core HR,\nperformance management, and analytics.\nKey Metrics - Q1 2025\nMetric Q1 2025\nQuarterly Revenue 4.7M\nSubscription ARR (end of period) 19.8M\nGross Margin 74%\nNet Pound Retention - NPR (LTM) 117%\nAnnual Logo Churn 4.3%\nActive Subscriptions 395\nAvg. Seats per Customer 144\nTotal Headcount 92\nCommentary\nIn the quarter ended Q1 2025, PeopleFlow delivered Quarterly Revenue of 4.7M, up from 4.4M in Q4 2024. End-of-period\nSubscription ARR reached 19.8M. Gross Margin held at 74% despite the ongoing cloud provider migration, which management\nexpects to conclude in H1 2025. Active Subscriptions reached 395, with growth concentrated in mid-market professional services\nfirms.\nNon-Core Financial Items\n- Share-based compensation expense: 0.36M\n- No material FX or restructuring charges in Q1 2025.\n(1) All figures are denominated in GBP unless otherwise noted.\n(2) Net Pound Retention (NPR) is equivalent to 'Net Dollar Retention' reported in Q4 2024; relabelled to reflect GBP reporting currency.\n(3) 'Active Subscriptions' is equivalent to 'Paying Customer Logos' in prior periods; terminology updated in Q1 2025.\n(4) Logo Churn is annualised on a last-twelve-months basis."
+  ],
+  "extraction": {
+    "company_name": "PeopleFlow HR Systems Ltd.",
+    "business_model": "saas",
+    "reporting_period": "Q1 2025",
+    "reporting_currency": "GBP",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Quarterly Revenue",
+        "value_raw": "4.7M",
+        "period": "Q1 2025",
+        "period_basis": "quarterly",
+        "source_quote": "In the quarter ended Q1 2025, PeopleFlow delivered Quarterly Revenue of 4.7M, up from 4.4M in Q4 2024.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "arr",
+        "raw_label": "Subscription ARR (end of period)",
+        "value_raw": "19.8M",
+        "period": "Q1 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "End-of-period Subscription ARR reached 19.8M.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "74%",
+        "period": "Q1 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Gross Margin held at 74% despite the ongoing cloud provider migration, which management expects to conclude in H1 2025.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "nrr",
+        "raw_label": "Net Pound Retention - NPR (LTM)",
+        "value_raw": "117%",
+        "period": "Q1 2025",
+        "period_basis": "ltm",
+        "source_quote": "Net Pound Retention - NPR (LTM) 117%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "renamed_per_footnote",
+        "note": ""
+      },
+      {
+        "canonical_metric": "logo_churn",
+        "raw_label": "Annual Logo Churn",
+        "value_raw": "4.3%",
+        "period": "Q1 2025",
+        "period_basis": "annual",
+        "source_quote": "Annual Logo Churn 4.3%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "92",
+        "period": "Q1 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 92",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

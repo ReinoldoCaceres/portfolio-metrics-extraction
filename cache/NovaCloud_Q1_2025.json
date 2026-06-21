@@ -1,0 +1,112 @@
+{
+  "pdf": "NovaCloud_Q1_2025.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "53ef96100fd6",
+  "pages": [
+    "NovaCloud Analytics Inc.\nPortfolio Company Update | B2B SaaS - Analytics & Observability\nPeriod: Q1 2025\nNovaCloud Analytics Inc. provides cloud-native analytics and observability tools to mid-market and enterprise digital businesses\nacross North America and Western Europe.\nKey Financial & Operating Metrics\nMetric Q1 2025\nRecognized Revenue (USD) $7.9M\nEnd-of-Period ARR $31.6M\nGross Margin 77%\nNRR (LTM) 121%\nLogo Churn (LTM) 6.1%\nARR per Full-Time Employee $234k\nCash Balance $21.3M\nMonthly Net Burn ($0.82M)\nTotal Headcount 135\nRecognized Revenue of $7.9M in Q1 2025 reflects continued momentum in both new logo additions (13 in the quarter) and\nexpansion. Expansion revenue of $1.7M represented 22% of total recognized revenue. ARR per full-time employee reached $234k\nat period end, a metric management has introduced as a capital efficiency benchmark. Infrastructure costs declined to\napproximately 24% of revenue.\nPipeline Summary\nPipeline Stage Count Total ACV Commit ACV\nQualified 33 $9.1M $3.8M\nProposal / Negotiation 17 $6.8M $3.4M\nVerbal Commit 5 $2.6M $1.9M\nKey Risks\n- NRR improvement dependent on continued module expansion; limited new product surface area expected in H1.\n- Two large enterprise deals in verbal commit as of Q4 2024 pushed to Q2; creates lumpiness risk.\n- Western Europe pipeline expanding but local sales capacity remains thin.\n(1) NRR (Net Revenue Retention) is equivalent to Net Dollar Retention in prior reporting periods.\n(2) ARR per Full-Time Employee is a new efficiency metric introduced in Q1 2025 board reporting.\n(3) Commit ACV in pipeline table reflects management's probability-weighted view; not a contractual commitment.\n(4) Logo Churn is presented on a last-twelve-months (LTM) basis."
+  ],
+  "extraction": {
+    "company_name": "NovaCloud Analytics Inc.",
+    "business_model": "saas",
+    "reporting_period": "Q1 2025",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Recognized Revenue (USD)",
+        "value_raw": "$7.9M",
+        "period": "Q1 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Recognized Revenue of $7.9M in Q1 2025 reflects continued momentum in both new logo additions (13 in the quarter) and expansion.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "arr",
+        "raw_label": "End-of-Period ARR",
+        "value_raw": "$31.6M",
+        "period": "Q1 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "End-of-Period ARR $31.6M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "77%",
+        "period": "Q1 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Gross Margin 77%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "nrr",
+        "raw_label": "NRR (LTM)",
+        "value_raw": "121%",
+        "period": "Q1 2025",
+        "period_basis": "ltm",
+        "source_quote": "NRR (LTM) 121%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "logo_churn",
+        "raw_label": "Logo Churn (LTM)",
+        "value_raw": "6.1%",
+        "period": "Q1 2025",
+        "period_basis": "ltm",
+        "source_quote": "Logo Churn (LTM) 6.1%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "cash",
+        "raw_label": "Cash Balance",
+        "value_raw": "$21.3M",
+        "period": "Q1 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Cash Balance $21.3M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "net_burn",
+        "raw_label": "Monthly Net Burn",
+        "value_raw": "($0.82M)",
+        "period": "Q1 2025",
+        "period_basis": "monthly",
+        "source_quote": "Monthly Net Burn ($0.82M)",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "135",
+        "period": "Q1 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 135",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

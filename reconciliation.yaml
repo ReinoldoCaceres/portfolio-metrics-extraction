@@ -1,0 +1,61 @@
+# Hand-curated reconciliation knowledge.
+#
+# Cross-document reconciliation (entity resolution, restatements, snapshot cross-check)
+# can only be done by something that sees ALL documents at once, never by a single-doc
+# extraction. For a 1-2 hour crawl-phase PoC this is a small, VISIBLE, auditable data
+# file the pipeline reads, every entry carries the source quote it came from. The
+# production version would learn these from footnotes at scale (noted in the README).
+
+# Company name as printed -> canonical, for entity resolution across a rebrand.
+entity_aliases:
+  fleetlink:
+    canonical_name: "Apex Freight Solutions Inc."
+    reason: "Rebrand effective 2025-04-01; Apex Freight is the successor entity to FleetLink."
+    source: "ApexFreight_Q2_2025: 'following the completion of our rebrand from FleetLink Logistics Network, effective 1 April 2025'"
+
+# The Portfolio_Snapshot is Sagard's hand-built quarterly artifact -- the very thing
+# this tool automates. We use it as a CROSS-CHECK ORACLE, not as a data source. These
+# are the figures it reported (hand-keyed with quotes) so we can validate our automated
+# extraction against the manual baseline and show where the manual one drops data.
+manual_snapshot_baseline:
+  period: "Q2 2025"
+  source_doc: "Portfolio_Snapshot_Q2_2025.pdf"
+  values:
+    - company_key: novacloud
+      metric: recognized_revenue
+      snapshot_value_raw: "$8.4M"
+      quote: "Recognized Revenue $8.4M"
+    - company_key: novacloud
+      metric: arr
+      snapshot_value_raw: "$34.2M"
+      quote: "Annual Recurring Revenue $34.2M"
+    - company_key: medisight
+      metric: recognized_revenue
+      snapshot_value_raw: "6.8M"
+      quote: "Recognized Revenue 6.8M"
+    - company_key: medisight
+      metric: arr
+      snapshot_value_raw: "27.9M"
+      quote: "Contracted ARR as of June 30, 2025 was 27.9M per the standalone Q2 2025 report."
+      note: "Snapshot buries MediSight ARR in a footnote, not its table."
+    - company_key: talentvault
+      metric: headcount
+      snapshot_value_raw: null
+      quote: "TalentVault headcount is not included in this summary; refer to standalone reporting."
+      note: "Snapshot omits TalentVault headcount entirely; the pipeline recovers it from the standalone report."
+    - company_key: carbontrack
+      metric: recognized_revenue
+      snapshot_value_raw: "$4.1M"
+      quote: "Revenue $4.1M"
+
+# Known restatements: same (company, metric, period), two different values across docs.
+restatements:
+  - company_key: peopleflow
+    metric: recognized_revenue
+    period: "Q1 2025"
+    values:
+      - value_raw: "4.7M"
+        as_reported_in: "PeopleFlow_Q1_2025.pdf"
+      - value_raw: "4.6M (restated)"
+        as_reported_in: "PeopleFlow_Q2_2025.pdf"
+    note: "Q1 revenue restated 4.7M -> 4.6M after a contract modification was reversed in April 2025; the Q1 standalone report was not reissued."

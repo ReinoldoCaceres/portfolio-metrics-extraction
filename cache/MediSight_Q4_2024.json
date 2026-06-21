@@ -1,0 +1,64 @@
+{
+  "pdf": "MediSight_Q4_2024.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "078fd0fce841",
+  "pages": [
+    "MediSight Data Platform Inc.\nQuarterly Snapshot | Clinical & Operational Data Platform\nPeriod: Q4 2024\nMediSight Data Platform Inc. (\"MediSight\") operates a cloud-based data platform for hospital systems, aggregating clinical, claims,\nand operational data. Contracts are multi-year with pricing tied to data volume and number of facilities.\nKey Metrics - Q4 2024\nMetric Q4 2024\nRecognized Revenue 6.1M\nGross Margin 75%\nContracted ARR (end of period) 24.5M\nARR Growth (YoY) 38%\nARR from Existing Accounts 82%\nAvg. Remaining Contract Term 3.1 years\nTotal Headcount 108\nOperating Observations\nRecognized revenue for Q4 2024 totalled 6.1M with Gross Margin of 75%. Contracted ARR reached 24.5M, driven primarily by\nexpansion within existing health systems. MediSight onboarded one new hospital network during the quarter, requiring incremental\nimplementation and customer success headcount. Management continues to target gross margin in the mid- to high-70s for the\nnear term.\nNo material customer churn was observed. Management flagged active late-stage conversations with European hospital groups; no\nprobability-weighted pipeline figures were shared.\nOther Financial Information\n- Capitalized software development costs: 0.4M in Q4 2024.\n- No material write-downs of previously capitalized software.\n- Evaluation of a second data centre region for international expansion is ongoing; no capital commitments made.\n(1) Contracted ARR represents annualized value of signed, active contracts.\n(2) ARR Growth (YoY) is computed versus the equivalent period of the prior fiscal year.\n(3) Gross Margin excludes implementation and customer success costs.\n(4) Figures are management estimates; unaudited."
+  ],
+  "extraction": {
+    "company_name": "MediSight Data Platform Inc.",
+    "business_model": "saas",
+    "reporting_period": "Q4 2024",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Recognized Revenue",
+        "value_raw": "6.1M",
+        "period": "Q4 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Recognized revenue for Q4 2024 totalled 6.1M with Gross Margin of 75%.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "75%",
+        "period": "Q4 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Recognized revenue for Q4 2024 totalled 6.1M with Gross Margin of 75%.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "arr",
+        "raw_label": "Contracted ARR (end of period)",
+        "value_raw": "24.5M",
+        "period": "Q4 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Contracted ARR reached 24.5M, driven primarily by expansion within existing health systems.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "108",
+        "period": "Q4 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 108",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

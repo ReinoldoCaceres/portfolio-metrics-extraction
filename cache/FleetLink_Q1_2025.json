@@ -1,0 +1,64 @@
+{
+  "pdf": "FleetLink_Q1_2025.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "0ce91e54bd48",
+  "pages": [
+    "FleetLink Logistics Network\nQ1 2025 Shipper & Carrier Network Update | Freight Marketplace\nPeriod: Q1 2025\nFleetLink connects shippers and carriers through a technology-enabled freight marketplace. Transaction revenue is the primary\nrevenue driver.\nNetwork & Volume Metrics\nMetric Q1 2025\nCompleted Shipments 1.17M\nActive Shippers 3,310\nActive Carriers 7,550\nAverage Take Rate 11.0%\nFinancial Summary\nMetric Q1 2025\nGross Transaction Revenue 8.9M\nGross Margin 52%\nContribution Margin / Shipment $2.19\nMarketing Spend as % of Revenue 17%\nSupport Tickets / 1,000 Shipments 14.9\nGross Transaction Revenue of 8.9M in Q1 2025 was broadly consistent with Q4 2024 despite a 9% increase in completed\nshipments relative to the approximately 1.1M shipments completed in Q4 2024, reflecting tighter promotional spend and improved\ncarrier pricing discipline. Gross Margin improved to 52%. The team ended the quarter at 199 employees, with additions focused on\ncarrier operations and data engineering.\n(1) On-Time Delivery Rate for Q1 2025 was 95.4%; disclosed here rather than in the metrics table pending a format review.\n(2) Gross Transaction Revenue reflects all fees earned on completed shipments; may differ from prior 'Platform Revenue' label.\n(3) Contribution Margin per Shipment is post-carrier-cost, pre-overhead allocation.\n(4) Headcount of 199 at Q1 2025 period end is disclosed in commentary; not tabled this quarter."
+  ],
+  "extraction": {
+    "company_name": "FleetLink Logistics Network",
+    "business_model": "payments_marketplace",
+    "reporting_period": "Q1 2025",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "tpv",
+        "raw_label": "Gross Transaction Revenue",
+        "value_raw": "8.9M",
+        "period": "Q1 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Gross Transaction Revenue of 8.9M in Q1 2025 was broadly consistent with Q4 2024 despite a 9% increase in completed shipments relative to the approximately 1.1M shipments completed in Q4 2024, reflecting tighter promotional spend and improved carrier pricing discipline.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "take_rate",
+        "raw_label": "Average Take Rate",
+        "value_raw": "11.0%",
+        "period": "Q1 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Average Take Rate 11.0%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "52%",
+        "period": "Q1 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Gross Margin improved to 52%.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Headcount",
+        "value_raw": "199",
+        "period": "Q1 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "The team ended the quarter at 199 employees, with additions focused on carrier operations and data engineering.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

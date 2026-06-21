@@ -1,0 +1,64 @@
+{
+  "pdf": "MediSight_Q2_2025.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "496af86b6d79",
+  "pages": [
+    "MediSight Data Platform Inc.\nQuarterly Investor Snapshot | Clinical & Operational Data Platform\nPeriod: Q2 2025\nMediSight Data Platform Inc. (\"MediSight\") operates a cloud-based data platform for hospital systems, aggregating clinical, claims,\nand operational data.\nKey Metrics - Q2 2025\nMetric Q2 2025\nRecognized Revenue 6.8M\nGross Margin 77%\nContracted ARR (end of period) 27.9M\nARR Growth (YoY) 31%\nExpansion ARR as % of Total ARR 87%\nTotal Headcount 121\nSelected Operating Observations\n- No material customer churn was observed during the quarter.\n- During Q2 2025, MediSight continued deploying its platform across two new hospital networks, requiring incremental hiring in\nimplementation and customer success.\n- Several late-stage opportunities remain active with European hospital groups; management did not share probability-weighted\npipeline figures.\n- Management continues to target Gross Margin in the mid- to high-70s.\nOther Financial Information\nCapitalized development costs in Q2 2025 amounted to 0.5M. No material write-downs of previously capitalized software were\nrecorded. Management is evaluating a second data centre region to support international expansion; no firm capital commitments\nhave been made.\n(1) Contracted ARR represents annualized value of signed, active contracts; excludes renewals under negotiation.\n(2) Expansion ARR % is equivalent to 'ARR from Existing Accounts' metric used in prior quarters.\n(3) Average remaining contract term is not reported this quarter; last disclosed as 3.2 years in Q1 2025.\n(4) Gross Margin excludes implementation and customer success costs."
+  ],
+  "extraction": {
+    "company_name": "MediSight Data Platform Inc.",
+    "business_model": "saas",
+    "reporting_period": "Q2 2025",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Recognized Revenue",
+        "value_raw": "6.8M",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Recognized Revenue 6.8M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "77%",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Gross Margin 77%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": "Gross Margin excludes implementation and customer success costs."
+      },
+      {
+        "canonical_metric": "arr",
+        "raw_label": "Contracted ARR (end of period)",
+        "value_raw": "27.9M",
+        "period": "Q2 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Contracted ARR (end of period) 27.9M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "121",
+        "period": "Q2 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 121",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

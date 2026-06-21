@@ -1,0 +1,64 @@
+{
+  "pdf": "MediSight_Q1_2025.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "cf13fdc19284",
+  "pages": [
+    "MediSight Data Platform Inc.\nQuarterly Operating Update | Clinical Data & Analytics Platform\nQuarter ended March 31, 2025\nMediSight operates a cloud-based clinical and operational data platform for hospital systems. Multi-year contracts are priced by\ndata volume and facility count.\nKey Metrics\nMetric Quarter ended Mar 31, 2025\nRecognized Revenue 6.3M\nGross Margin 76%\nContracted Annual Recurring Revenue 26.1M\nARR Growth (YoY) 34%\nARR from Existing Accounts 85%\nAvg. Remaining Contract Term 3.2 years\nOperating Commentary\nRecognized revenue in the three months ended March 31, 2025 totalled 6.3M, with Gross Margin of 76%. Contracted Annual\nRecurring Revenue grew to 26.1M, with 85% of ARR attributable to expansion within existing health systems. The company ended\nthe period with 114 employees, up from 108 at December 31, 2024, with additions concentrated in implementation and customer\nsuccess to support the new network onboarding.\nOne new hospital network was deployed during the period. Management noted continued progress in late-stage discussions with\nEuropean hospital groups, though no probability-weighted pipeline data was provided.\nOther Financial Information\n- Capitalized development costs in the period: 0.5M.\n- Second data centre region evaluation ongoing; no firm capital commitments.\n(1) 'Contracted Annual Recurring Revenue' is equivalent to 'Contracted ARR' used in prior periods.\n(2) Headcount of 114 is disclosed in commentary; not separately tabled this quarter.\n(3) Gross Margin excludes implementation and customer success costs, reported as operating expenses.\n(4) All figures are unaudited management estimates."
+  ],
+  "extraction": {
+    "company_name": "MediSight Data Platform Inc.",
+    "business_model": "saas",
+    "reporting_period": "Q1 2025",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Recognized Revenue",
+        "value_raw": "6.3M",
+        "period": "Quarter ended Mar 31, 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Recognized revenue in the three months ended March 31, 2025 totalled 6.3M, with Gross Margin of 76%.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "76%",
+        "period": "Quarter ended Mar 31, 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Recognized revenue in the three months ended March 31, 2025 totalled 6.3M, with Gross Margin of 76%.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "arr",
+        "raw_label": "Contracted Annual Recurring Revenue",
+        "value_raw": "26.1M",
+        "period": "Quarter ended Mar 31, 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Contracted Annual Recurring Revenue grew to 26.1M, with 85% of ARR attributable to expansion within existing health systems.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "renamed_per_footnote",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Headcount",
+        "value_raw": "114",
+        "period": "Quarter ended Mar 31, 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "The company ended the period with 114 employees, up from 108 at December 31, 2024, with additions concentrated in implementation and customer success to support the new network onboarding.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "pdf": "CarbonTrack_Q2_2025.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "342c64152da5",
+  "pages": [
+    "CarbonTrack Analytics Corp.\nPortfolio Update | ESG Data & Carbon Accounting Platform\nPeriod: Q2 2025\nCarbonTrack provides a cloud-native carbon accounting and Scope 1/2/3 emissions tracking platform to mid-market and enterprise\ncorporates with ESG reporting obligations. Pricing is per-entity with data ingestion add-ons. The company primarily serves clients in\nNorth America and Western Europe.\nHeadline Metrics - Q2 2025\nMetric Q2 2025 Q1 2025\nContracted ARR $16.9M $15.2M\nRecognized Revenue $4.1M $3.8M\nGross Margin 73% 72%\nNet Revenue Retention (LTM) 121% 118%\nLogo Churn (LTM) 3.8% 4.1%\nPaying Entities (platform) 1,042 964\nTotal Headcount 78 72\nMonthly Net Burn ($0.55M) ($0.61M)\nCash Balance $13.8M $14.8M\nPlatform & Data Metrics\nPlatform Metric Q2 2025\nEmission Records Processed (QTD) 88.4M\nConnected Data Source Integrations 214\nScope 3 Value Chain Entities Tracked 28,600\nAvg. Reporting Frameworks per Client 2.3\nAutomated Audit Trail Coverage 96%\nAPI Data Ingestion Uptime 99.89%\nAverage reporting frameworks per client reached 2.3 in Q2 2025, reflecting growing multi-standard compliance needs (GHG\nProtocol, TCFD, CSRD, ISSB). Scope 3 value chain entity tracking grew 18% quarter-over-quarter. Net new paying entities added\nin Q2 2025 totalled 78, compared to 62 in Q1, driven by CSRD deadlines and CDP filing requirements.\nNon-Recurring Items\n- Partnership integration fee from a large accounting network: +$0.2M (one-time; excluded from ARR and recurring revenue).\n- Non-cash stock-based compensation: $0.28M.\n(1) Contracted ARR excludes one-time integration fees and professional services revenue.",
+    "(2) 'Paying Entities' counts each separately contracted reporting entity; group structures may consolidate multiple.\n(3) Gross Margin excludes customer success and data science costs.\n(4) Regulatory references (SEC, CSRD, ISSB) are for context; do not constitute legal or compliance advice."
+  ],
+  "extraction": {
+    "company_name": "CarbonTrack Analytics Corp.",
+    "business_model": "saas",
+    "reporting_period": "Q2 2025",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Recognized Revenue",
+        "value_raw": "$4.1M",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Recognized Revenue $4.1M $3.8M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "73%",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Gross Margin 73% 72%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": "Gross Margin excludes customer success and data science costs."
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "78",
+        "period": "Q2 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 78 72",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "arr",
+        "raw_label": "Contracted ARR",
+        "value_raw": "$16.9M",
+        "period": "Q2 2025",
+        "period_basis": "annual",
+        "source_quote": "Contracted ARR $16.9M $15.2M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": "Contracted ARR excludes one-time integration fees and professional services revenue."
+      },
+      {
+        "canonical_metric": "nrr",
+        "raw_label": "Net Revenue Retention (LTM)",
+        "value_raw": "121%",
+        "period": "Q2 2025",
+        "period_basis": "ltm",
+        "source_quote": "Net Revenue Retention (LTM) 121% 118%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "logo_churn",
+        "raw_label": "Logo Churn (LTM)",
+        "value_raw": "3.8%",
+        "period": "Q2 2025",
+        "period_basis": "ltm",
+        "source_quote": "Logo Churn (LTM) 3.8% 4.1%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "cash",
+        "raw_label": "Cash Balance",
+        "value_raw": "$13.8M",
+        "period": "Q2 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Cash Balance $13.8M $14.8M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "net_burn",
+        "raw_label": "Monthly Net Burn",
+        "value_raw": "($0.55M)",
+        "period": "Q2 2025",
+        "period_basis": "monthly",
+        "source_quote": "Monthly Net Burn ($0.55M) ($0.61M)",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "pdf": "LendBridge_Q2_2024.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "2d47431b194c",
+  "pages": [
+    "LendBridge Capital Corp.\nQuarterly Credit & Operating Review\nPeriod Ended: Q2 2024\nLendBridge Capital Corp. (\"LendBridge\") is a specialty finance platform providing working capital lines to SMEs across North\nAmerica. Revenue is generated through interest income, origination fees, and ancillary treasury services.\nCondensed Income Summary\nItem Q2 2024\nRecognized Revenue $10.1M\nInterest Expense ($2.9M)\nNet Interest Margin 8.6%\nFee & Other Income $0.7M\nGross Margin 58%\nPre-Provision Operating Margin 29%\nCredit Portfolio Indicators\nMetric Q2 2024\nTotal Loan Book (gross) $258M\nActive Borrowers 1,180\nAverage Loan Size $72k\nNet Charge-off Rate (LTM) 4.2%\nBalance Sheet Leverage 2.8x\nSenior Covenant Headroom +140bps\nTotal Headcount 162\nPortfolio Sector Mix - Q2 2024\nSector Outstanding Balance Share of Book\nServices $95M 37%\nManufacturing $62M 24%\nRetail $48M 19%\nHospitality $34M 13%\nOther $19M 7%\nNon-Core Items\n- Non-cash fair value adjustment on warrant portfolio: +$0.4M",
+    "- No material one-time items in the quarter.\n(1) Net Charge-off Rate is on a last-twelve-months (LTM) basis; includes write-offs net of recoveries.\n(2) Pre-Provision Operating Margin excludes loan loss provisions and non-recurring items.\n(3) Gross Margin reflects interest income net of cost of funds only.\n(4) Senior covenant headroom measured relative to minimum NIM covenant of 7.5%."
+  ],
+  "extraction": {
+    "company_name": "LendBridge Capital Corp.",
+    "business_model": "lender",
+    "reporting_period": "Q2 2024",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Recognized Revenue",
+        "value_raw": "$10.1M",
+        "period": "Q2 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Recognized Revenue $10.1M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "58%",
+        "period": "Q2 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Gross Margin 58%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "162",
+        "period": "Q2 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 162",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "net_interest_margin",
+        "raw_label": "Net Interest Margin",
+        "value_raw": "8.6%",
+        "period": "Q2 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Net Interest Margin 8.6%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "total_loan_book",
+        "raw_label": "Total Loan Book (gross)",
+        "value_raw": "$258M",
+        "period": "Q2 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Loan Book (gross) $258M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "charge_off_rate",
+        "raw_label": "Net Charge-off Rate (LTM)",
+        "value_raw": "4.2%",
+        "period": "Q2 2024",
+        "period_basis": "ltm",
+        "source_quote": "Net Charge-off Rate (LTM) 4.2%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

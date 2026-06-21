@@ -1,0 +1,101 @@
+{
+  "pdf": "LendBridge_Q2_2025.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "e68d8c5d0a71",
+  "pages": [
+    "LendBridge Capital Corp.\nQ2 2025 Performance Review\nPeriod Ended: Q2 2025\nLendBridge Capital Corp. (\"LendBridge\") is a specialty finance platform providing working capital lines to SMEs across North\nAmerica. Revenue is generated through interest income, fees, and ancillary treasury services.\nCondensed Income Summary\nItem Q2 2025\nRecognized Revenue $12.7M\nInterest Expense ($3.4M)\nNet Interest Margin 9.4%\nFee & Other Income $1.1M\nGross Margin 62%\nPre-Provision Operating Margin 34%\nProvision Coverage Ratio 2.4x\nCredit Portfolio Indicators\nMetric Q2 2025\nTotal Loan Book (gross) $316M\nActive Borrowers 1,420\nAverage Loan Size $84k\nNet Charge-off Rate (LTM) 3.1%\nBalance Sheet Leverage 2.7x\nSenior Covenant Headroom +148bps\nTotal Headcount 188\nPortfolio Sector Mix - Q2 2025\nSector Outstanding Balance Share of Book\nServices $120M 38%\nManufacturing $82M 26%\nRetail $54M 17%\nHospitality $38M 12%\nOther $22M 7%\nProvision Coverage Ratio of 2.4x represents total loan loss reserves as a multiple of LTM net charge-offs. Management introduced\nthis metric in Q2 2025 to provide additional visibility into reserve adequacy. The ratio is above the board-approved minimum of",
+    "2.0x.\nNon-Core & One-Time Items\n- Non-cash fair value adjustment on warrant portfolio: +$0.6M\n- One-time legal settlement expense accrual: ($0.3M)\n- Reported basic EPS for the period: $0.11 (unaudited)\n(1) Net Charge-off Rate is on a last-twelve-months (LTM) basis; equivalent to 'Credit Loss Rate' used in Q3-Q4 2024.\n(2) Pre-Provision Operating Margin reinstated per updated board reporting policy; equivalent to 'Adjusted Operating Margin' in Q3 2024.\n(3) Provision Coverage Ratio = total loan loss reserves / LTM net charge-offs; introduced Q2 2025.\n(4) Gross Margin reflects interest income net of cost of funds; excludes provisions and operating expenses."
+  ],
+  "extraction": {
+    "company_name": "LendBridge Capital Corp.",
+    "business_model": "lender",
+    "reporting_period": "Q2 2025",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Recognized Revenue",
+        "value_raw": "$12.7M",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Recognized Revenue $12.7M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "62%",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Gross Margin 62%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "188",
+        "period": "Q2 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 188",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "net_interest_margin",
+        "raw_label": "Net Interest Margin",
+        "value_raw": "9.4%",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Net Interest Margin 9.4%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "total_loan_book",
+        "raw_label": "Total Loan Book (gross)",
+        "value_raw": "$316M",
+        "period": "Q2 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Loan Book (gross) $316M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "charge_off_rate",
+        "raw_label": "Net Charge-off Rate (LTM)",
+        "value_raw": "3.1%",
+        "period": "Q2 2025",
+        "period_basis": "ltm",
+        "source_quote": "Net Charge-off Rate (LTM) 3.1%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "renamed_per_footnote",
+        "note": ""
+      },
+      {
+        "canonical_metric": "provision_coverage_ratio",
+        "raw_label": "Provision Coverage Ratio",
+        "value_raw": "2.4x",
+        "period": "Q2 2025",
+        "period_basis": "unknown",
+        "source_quote": "Provision Coverage Ratio 2.4x",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

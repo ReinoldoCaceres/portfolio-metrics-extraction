@@ -1,0 +1,113 @@
+{
+  "pdf": "TalentVault_Q2_2025.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "34413b6ea9c4",
+  "pages": [
+    "TalentVault Inc.\nInvestor Update | Talent Intelligence & Recruiting Automation\nPeriod: Q2 2025\nTalentVault provides an AI-powered talent intelligence platform to enterprise HR and recruiting teams, aggregating labour market\ndata, automating candidate sourcing, and providing predictive retention analytics. Pricing is per-seat with data feed tiers.\nKey Performance Indicators - Q2 2025\nKPI Q2 2025 Q1 2025\nContracted ARR $22.4M $20.8M\nQuarterly Revenue (recognized) $5.5M $5.1M\nGross Margin 76% 75%\nGross Revenue Retention (LTM) 91% 90%\nNet Revenue Retention (LTM) 119% 116%\nEnterprise Accounts (>$100k ARR) 48 43\nTotal Paying Seats 6,840 6,210\nTotal Headcount 103 97\nMonthly Net Burn ($0.68M) ($0.74M)\nCash Balance $17.9M $19.0M\nPlatform Engagement\nWeekly active users as a percentage of licensed seats reached 64% on a 30-day trailing basis, up from 61% in Q1 2025. Candidate\nprofiles processed during the quarter totalled approximately 4.2 million, a 14% increase quarter-over-quarter. AI-assisted shortlist\nadoption reached 73% of active users, compared to 68% in the prior quarter. The predictive retention module (launched Q1 2025)\nsaw uptake across 22 enterprise accounts by period end.\nPipeline Summary\nPipeline Stage # Deals Total ACV Wtd. ACV\nDiscovery / Qualified 41 $11.2M $3.4M\nActive Evaluation 22 $8.6M $4.3M\nLegal / Procurement 9 $4.1M $3.1M\nAverage enterprise sales cycle extended to approximately 112 days in Q2 2025 versus 98 days in Q1, driven by increased\nprocurement scrutiny around AI vendor security assessments. Two verbal commitments from Q1 slipped to Q3 2025.\nKey Risks\n- Data provenance risk: a key labour market data supplier (~35% of coverage) is in contract renegotiation.\n- EU AI Act compliance investment estimated at $0.6M-$1.0M in H2 2025.",
+    "- Two large ATS vendors announced competing AI sourcing features in Q2 2025.\n(1) Contracted ARR reflects signed, active contracts; includes multi-year deals at full annualized value.\n(2) Gross Revenue Retention excludes expansion; Net Revenue Retention includes upsell and cross-sell.\n(3) Monthly Net Burn excludes non-cash stock-based compensation ($0.42M/quarter).\n(4) Weighted ACV applies deal-stage probability haircuts to total pipeline ACV."
+  ],
+  "extraction": {
+    "company_name": "TalentVault Inc.",
+    "business_model": "saas",
+    "reporting_period": "Q2 2025",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "arr",
+        "raw_label": "Contracted ARR",
+        "value_raw": "$22.4M",
+        "period": "Q2 2025",
+        "period_basis": "annual",
+        "source_quote": "Contracted ARR $22.4M $20.8M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Quarterly Revenue (recognized)",
+        "value_raw": "$5.5M",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Quarterly Revenue (recognized) $5.5M $5.1M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "76%",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Gross Margin 76% 75%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_revenue_retention",
+        "raw_label": "Gross Revenue Retention (LTM)",
+        "value_raw": "91%",
+        "period": "Q2 2025",
+        "period_basis": "ltm",
+        "source_quote": "Gross Revenue Retention (LTM) 91% 90%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "nrr",
+        "raw_label": "Net Revenue Retention (LTM)",
+        "value_raw": "119%",
+        "period": "Q2 2025",
+        "period_basis": "ltm",
+        "source_quote": "Net Revenue Retention (LTM) 119% 116%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "103",
+        "period": "Q2 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 103 97",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "net_burn",
+        "raw_label": "Monthly Net Burn",
+        "value_raw": "($0.68M)",
+        "period": "Q2 2025",
+        "period_basis": "monthly",
+        "source_quote": "Monthly Net Burn ($0.68M) ($0.74M)",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": "excludes non-cash stock-based compensation ($0.42M/quarter)"
+      },
+      {
+        "canonical_metric": "cash",
+        "raw_label": "Cash Balance",
+        "value_raw": "$17.9M",
+        "period": "Q2 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Cash Balance $17.9M $19.0M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

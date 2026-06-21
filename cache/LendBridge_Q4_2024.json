@@ -1,0 +1,88 @@
+{
+  "pdf": "LendBridge_Q4_2024.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "fe82c080ebb9",
+  "pages": [
+    "LendBridge Capital Corp.\nQ4 2024 Quarterly Credit Review\nPeriod Ended: Q4 2024\nLendBridge Capital Corp. is a specialty finance platform providing working capital solutions to SMEs across North America.\nCondensed Income Summary\nItem Q4 2024\nRecognized Revenue $11.4M\nInterest Expense ($3.1M)\nNet Interest Margin 9.1%\nFee & Ancillary Income $0.9M\nGross Margin 60%\nCredit Portfolio Indicators\nMetric Q4 2024\nTotal Loan Book (gross) $291M\nActive Borrowers 1,310\nAverage Loan Size $78k\nCredit Loss Rate (LTM) 3.6%\nBalance Sheet Leverage 2.9x\nSenior Covenant Headroom +118bps\nTotal Headcount 175\nPortfolio Composition Commentary\nAverage loan size increased to $78k in Q4 2024, up from an average of $74k in Q3 2024, reflecting continued migration of the book\ntoward larger working capital facilities in the Manufacturing and Services segments. Total gross outstanding balances reached\n$291M at quarter end.\nAs of Q4 2024, the loan book remains diversified across sector exposures. The Services segment accounts for approximately 37%\nof outstanding balances ($108M), followed by Manufacturing at 26% ($74M), Retail at 18% ($52M), Hospitality at 13% ($37M), and\nall other sectors at 7% ($20M). No sector concentration thresholds were breached during the period. Management elected not to\npresent a formal sector mix table this quarter pending a refresh of the portfolio monitoring framework expected in Q1 2025.\n(1) Credit Loss Rate replaces 'Net Charge-off Rate' terminology; calculated equivalently on a last-twelve-months basis.\n(2) Adjusted Operating Margin is not reported this quarter; refer to Gross Margin and NIM for profitability.\n(3) Gross Margin reflects net interest income net of cost of funds; excludes provisions and operating expenses."
+  ],
+  "extraction": {
+    "company_name": "LendBridge Capital Corp.",
+    "business_model": "lender",
+    "reporting_period": "Q4 2024",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Recognized Revenue",
+        "value_raw": "$11.4M",
+        "period": "Q4 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Recognized Revenue $11.4M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "60%",
+        "period": "Q4 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Gross Margin 60%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "175",
+        "period": "Q4 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 175",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "net_interest_margin",
+        "raw_label": "Net Interest Margin",
+        "value_raw": "9.1%",
+        "period": "Q4 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Net Interest Margin 9.1%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "total_loan_book",
+        "raw_label": "Total Loan Book (gross)",
+        "value_raw": "$291M",
+        "period": "Q4 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Loan Book (gross) $291M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "charge_off_rate",
+        "raw_label": "Credit Loss Rate (LTM)",
+        "value_raw": "3.6%",
+        "period": "Q4 2024",
+        "period_basis": "ltm",
+        "source_quote": "Credit Loss Rate (LTM) 3.6%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "renamed_per_footnote",
+        "note": ""
+      }
+    ]
+  }
+}

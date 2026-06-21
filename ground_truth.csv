@@ -1,0 +1,49 @@
+company_key,metric,period,expected_value,expected_unit,note
+novacloud,recognized_revenue,Q2 2025,8.4,M,
+novacloud,gross_margin,Q2 2025,78,%,
+novacloud,headcount,Q2 2025,142,count,
+novacloud,arr,Q2 2025,34.2,M,
+novacloud,nrr,Q2 2025,123,%,Net Dollar Retention = NRR
+novacloud,cash,Q2 2025,19.6,M,
+novacloud,net_burn,Q2 2025,-0.75,M,monthly
+carbontrack,recognized_revenue,Q2 2025,4.1,M,
+carbontrack,gross_margin,Q2 2025,73,%,
+carbontrack,headcount,Q2 2025,78,count,
+carbontrack,arr,Q2 2025,16.9,M,Contracted ARR
+carbontrack,nrr,Q2 2025,121,%,
+clearpay,recognized_revenue,Q2 2025,17.3,M,Total Recognized Revenue (not TPV)
+clearpay,gross_margin,Q2 2025,67,%,
+clearpay,headcount,Q2 2025,211,count,
+clearpay,tpv,Q2 2025,3420,M,$3.42B
+clearpay,take_rate,Q2 2025,43,bps,
+constructiq,recognized_revenue,Q2 2025,4.5,M,
+constructiq,gross_margin,Q2 2025,71,%,
+constructiq,headcount,Q2 2025,89,count,
+constructiq,arr,Q2 2025,18.6,M,
+constructiq,nrr,Q2 2025,112,%,
+medisight,recognized_revenue,Q2 2025,6.8,M,bare number = USD
+medisight,gross_margin,Q2 2025,77,%,
+medisight,headcount,Q2 2025,121,count,
+medisight,arr,Q2 2025,27.9,M,Contracted ARR
+peopleflow,recognized_revenue,Q2 2025,5.1,M,GBP
+peopleflow,gross_margin,Q2 2025,73,%,stated in prose
+peopleflow,headcount,Q2 2025,96,count,
+peopleflow,arr,Q2 2025,21.4,M,Subscription ARR (GBP)
+peopleflow,nrr,Q2 2025,118,%,
+talentvault,recognized_revenue,Q2 2025,5.5,M,
+talentvault,gross_margin,Q2 2025,76,%,
+talentvault,headcount,Q2 2025,103,count,recovered (snapshot omits it)
+talentvault,arr,Q2 2025,22.4,M,Contracted ARR
+talentvault,nrr,Q2 2025,119,%,
+talentvault,gross_revenue_retention,Q2 2025,91,%,
+lendbridge,recognized_revenue,Q2 2025,12.7,M,
+lendbridge,gross_margin,Q2 2025,62,%,lender definition
+lendbridge,headcount,Q2 2025,188,count,
+lendbridge,net_interest_margin,Q2 2025,9.4,%,
+lendbridge,total_loan_book,Q2 2025,316,M,
+lendbridge,charge_off_rate,Q2 2025,3.1,%,Net Charge-off Rate
+lendbridge,provision_coverage_ratio,Q2 2025,2.4,x,
+apex,recognized_revenue,Q2 2025,9.3,M,Total Recognized Revenue
+apex,gross_margin,Q2 2025,54,%,
+apex,headcount,Q2 2025,204,count,
+apex,take_rate,Q2 2025,11.2,%,

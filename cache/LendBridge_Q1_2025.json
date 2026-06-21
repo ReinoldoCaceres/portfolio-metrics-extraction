@@ -1,0 +1,89 @@
+{
+  "pdf": "LendBridge_Q1_2025.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "a8356eea65c9",
+  "pages": [
+    "LendBridge Capital Corp.\nQ1 2025 Performance Review\nPeriod Ended: Q1 2025\nLendBridge Capital Corp. provides working capital lines of credit to SMEs across North America, generating revenue through\ninterest income, fees, and treasury services.\nCondensed Income Summary\nItem Q1 2025\nRecognized Revenue $12.1M\nInterest Expense ($3.2M)\nNet Interest Margin 9.3%\nFee & Ancillary Income $1.0M\nGross Margin 61%\nCredit Portfolio Indicators\nMetric Q1 2025\nTotal Loan Book (gross) $302M\nActive Borrowers 1,380\nAverage Loan Size $81k\nCredit Loss Rate (LTM) 3.3%\nBalance Sheet Leverage 2.8x\nSenior Covenant Headroom +132bps\nTotal Headcount 182\nPortfolio Sector Mix - Q1 2025\nSector Outstanding Balance Avg. Loan Yield\nServices $114M 11.8%\nManufacturing $78M 11.4%\nRetail $53M 12.3%\nHospitality $37M 13.1%\nOther $20M 11.9%\nLoan yields are presented at sector level for the first time in Q1 2025 as part of the refreshed portfolio monitoring framework.\nHospitality continues to carry the highest average yield at 13.1%, reflecting the risk premium embedded in origination pricing for the\nsector. Aggregate book yield averaged 11.9% in Q1 2025.",
+    "(1) Credit Loss Rate is on a last-twelve-months (LTM) basis; net of recoveries.\n(2) Avg. Loan Yield is computed as annualized interest income divided by average outstanding balance per sector.\n(3) Operating margin metrics (Pre-Provision / Adjusted) are under review and not reported this period."
+  ],
+  "extraction": {
+    "company_name": "LendBridge Capital Corp.",
+    "business_model": "lender",
+    "reporting_period": "Q1 2025",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Recognized Revenue",
+        "value_raw": "$12.1M",
+        "period": "Q1 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Recognized Revenue $12.1M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "61%",
+        "period": "Q1 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Gross Margin 61%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "182",
+        "period": "Q1 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 182",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "net_interest_margin",
+        "raw_label": "Net Interest Margin",
+        "value_raw": "9.3%",
+        "period": "Q1 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Net Interest Margin 9.3%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "total_loan_book",
+        "raw_label": "Total Loan Book (gross)",
+        "value_raw": "$302M",
+        "period": "Q1 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Loan Book (gross) $302M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "charge_off_rate",
+        "raw_label": "Credit Loss Rate (LTM)",
+        "value_raw": "3.3%",
+        "period": "Q1 2025",
+        "period_basis": "ltm",
+        "source_quote": "Credit Loss Rate (LTM) 3.3%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "renamed_per_footnote",
+        "note": ""
+      }
+    ]
+  }
+}

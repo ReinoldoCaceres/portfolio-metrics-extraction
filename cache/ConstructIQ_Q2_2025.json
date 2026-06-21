@@ -1,0 +1,125 @@
+{
+  "pdf": "ConstructIQ_Q2_2025.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "8b6da5d09850",
+  "pages": [
+    "ConstructIQ Solutions Inc.\nPortfolio Update | Q2 2025 | Construction Project Management SaaS\nPeriod: Q2 2025\nConstructIQ provides cloud-based project management and compliance tracking software to general contractors and\nsubcontractors across North America. Pricing is per-seat with add-on modules for safety compliance, bid management, and\nsubcontractor portals.\nHeadline Metrics\nMetric Q2 2025 Q1 2025\nAnnual Recurring Revenue $18.6M $17.1M\nQuarterly Recognized Revenue $4.5M $4.2M\nGross Margin 71% 70%\nNet Revenue Retention (LTM) 112% 110%\nLogo Churn (LTM) 6.3% 6.8%\nTotal Paying Accounts 834 798\nAvg. Modules per Account 2.4 2.1\nTotal Headcount 89 84\nCash & Equivalents $11.2M $12.1M\nQuarterly Net Burn ($0.91M) ($0.97M)\nPlatform Usage Metrics - Q2 2025\nUsage Metric Q2 2025\nMonthly Active Projects (avg.) 12,400\nDaily Active Users / Licensed Seats 58%\nDocuments Processed (QTD) 2.1M\nSafety Inspection Completions (QTD) 94,000\nSubcontractor Portal Connections 3,810\nAverage module attach increased to 2.4 from 2.1 in Q1 2025, driven by adoption of the safety compliance module following new\nOSHA reporting mandates in three U.S. states. Daily active user rate of 58% remains below management's internal 65% target.\nPipeline & Business Update\nDuring Q2 2025, ConstructIQ completed the migration of 47 legacy on-premise customers to the cloud platform. Three enterprise\naccounts (each >$200k ARR) are in late-stage negotiation; one has issued a verbal commitment. Weighted pipeline stands at\n$6.4M. Cash runway is approximately 12 months at current burn; management is evaluating a Series B process.\n(1) ARR reflects signed, active contracts only; excludes month-to-month arrangements (<2% of accounts).",
+    "(2) Net Revenue Retention computed on a last-twelve-months basis.\n(3) Daily Active User rate is a 30-day trailing average at period end.\n(4) Cash runway does not account for potential proceeds from the Series B process under evaluation."
+  ],
+  "extraction": {
+    "company_name": "ConstructIQ Solutions Inc.",
+    "business_model": "saas",
+    "reporting_period": "Q2 2025",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "arr",
+        "raw_label": "Annual Recurring Revenue",
+        "value_raw": "$18.6M",
+        "period": "Q2 2025",
+        "period_basis": "annual",
+        "source_quote": "Annual Recurring Revenue $18.6M $17.1M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Quarterly Recognized Revenue",
+        "value_raw": "$4.5M",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Quarterly Recognized Revenue $4.5M $4.2M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "71%",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Gross Margin 71% 70%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "nrr",
+        "raw_label": "Net Revenue Retention (LTM)",
+        "value_raw": "112%",
+        "period": "Q2 2025",
+        "period_basis": "ltm",
+        "source_quote": "Net Revenue Retention (LTM) 112% 110%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "logo_churn",
+        "raw_label": "Logo Churn (LTM)",
+        "value_raw": "6.3%",
+        "period": "Q2 2025",
+        "period_basis": "ltm",
+        "source_quote": "Logo Churn (LTM) 6.3% 6.8%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "89",
+        "period": "Q2 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 89 84",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "cash",
+        "raw_label": "Cash & Equivalents",
+        "value_raw": "$11.2M",
+        "period": "Q2 2025",
+        "period_basis": "point_in_time",
+        "source_quote": "Cash & Equivalents $11.2M $12.1M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "net_burn",
+        "raw_label": "Quarterly Net Burn",
+        "value_raw": "($0.91M)",
+        "period": "Q2 2025",
+        "period_basis": "quarterly",
+        "source_quote": "Quarterly Net Burn ($0.91M) ($0.97M)",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "cash_runway_months",
+        "raw_label": "Cash runway",
+        "value_raw": "12 months",
+        "period": "Q2 2025",
+        "period_basis": "unknown",
+        "source_quote": "Cash runway is approximately 12 months at current burn; management is evaluating a Series B process.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

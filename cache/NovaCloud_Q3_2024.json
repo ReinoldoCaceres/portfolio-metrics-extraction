@@ -1,0 +1,124 @@
+{
+  "pdf": "NovaCloud_Q3_2024.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "071dffcbcad6",
+  "pages": [
+    "NovaCloud Analytics Inc.\nQuarterly Business Review | B2B SaaS - Analytics & Observability\nPeriod: Q3 2024\nNovaCloud Analytics Inc. (\"NovaCloud\") provides cloud-native analytics and observability tooling to mid-market and enterprise\ndigital businesses.\nFinancial & Operating Summary\nMetric Q3 2024\nRecognized Revenue (USD) $6.5M\nEnd-of-Period ARR $26.8M\nGross Margin 75%\nNet Dollar Retention (LTM) 117%\nLogo Churn Rate (LTM) 7.2%\nCash Balance $26.6M\nMonthly Net Burn ($0.95M)\nCash Runway ~28 months\nTotal Headcount 120\nRecognized Revenue of $6.5M in Q3 2024 was up 12% quarter-over-quarter, driven by a combination of new logo additions (10 in\nthe quarter) and expansion within the existing customer base. Expansion revenue totalled $1.1M. Cloud infrastructure costs\nimproved to approximately 26% of revenue as workload optimisation efforts continued.\nBusiness Commentary\nNovaCloud's go-to-market team maintained a selective approach to new logo pursuit, focusing sales capacity on accounts with\nACV potential above $80k. The company continued to see healthy inbound demand from the e-commerce vertical. Management\ndid not provide a formal pipeline update for Q3 2024 given the mid-year sales restructuring; a refreshed pipeline review is expected\nto resume with Q4 reporting.\nKey Risks\n- Sales restructuring may delay Q4 pipeline build and near-term new logo additions.\n- Customer concentration risk persists; top 10 accounts ~30% of ARR.\n- Macro headwinds in digital commerce sector affecting some customer budget cycles.\n(1) Recognized Revenue is reported under ASC 606 on a ratable basis.\n(2) Net Dollar Retention and Logo Churn are on a last-twelve-months (LTM) basis.\n(3) Pipeline data not included this quarter; see commentary above."
+  ],
+  "extraction": {
+    "company_name": "NovaCloud Analytics Inc.",
+    "business_model": "saas",
+    "reporting_period": "Q3 2024",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Recognized Revenue (USD)",
+        "value_raw": "$6.5M",
+        "period": "Q3 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Recognized Revenue of $6.5M in Q3 2024 was up 12% quarter-over-quarter, driven by a combination of new logo additions (10 in the quarter) and expansion within the existing customer base.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "arr",
+        "raw_label": "End-of-Period ARR",
+        "value_raw": "$26.8M",
+        "period": "Q3 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "End-of-Period ARR $26.8M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "75%",
+        "period": "Q3 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Gross Margin 75%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "nrr",
+        "raw_label": "Net Dollar Retention (LTM)",
+        "value_raw": "117%",
+        "period": "Q3 2024",
+        "period_basis": "ltm",
+        "source_quote": "Net Dollar Retention (LTM) 117%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "logo_churn",
+        "raw_label": "Logo Churn Rate (LTM)",
+        "value_raw": "7.2%",
+        "period": "Q3 2024",
+        "period_basis": "ltm",
+        "source_quote": "Logo Churn Rate (LTM) 7.2%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "cash",
+        "raw_label": "Cash Balance",
+        "value_raw": "$26.6M",
+        "period": "Q3 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Cash Balance $26.6M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "net_burn",
+        "raw_label": "Monthly Net Burn",
+        "value_raw": "($0.95M)",
+        "period": "Q3 2024",
+        "period_basis": "monthly",
+        "source_quote": "Monthly Net Burn ($0.95M)",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "cash_runway_months",
+        "raw_label": "Cash Runway",
+        "value_raw": "~28 months",
+        "period": "Q3 2024",
+        "period_basis": "unknown",
+        "source_quote": "Cash Runway ~28 months",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "120",
+        "period": "Q3 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 120",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

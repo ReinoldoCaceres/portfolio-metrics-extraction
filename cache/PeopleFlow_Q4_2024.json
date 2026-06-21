@@ -1,0 +1,88 @@
+{
+  "pdf": "PeopleFlow_Q4_2024.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "b3c63a22f426",
+  "pages": [
+    "PeopleFlow HR Systems Ltd.\nInvestor Snapshot | Vertical SaaS - Human Capital Management\nQuarter Ended: Q4 2024 | Reporting Currency: GBP\nPeopleFlow HR Systems Ltd. (\"PeopleFlow\") is a vertical SaaS company providing human capital management tools to\nprofessional services firms in the UK and Ireland. The platform spans core HR, performance management, payroll integration, and\nanalytics.\nKey Metrics - Q4 2024\nMetric (GBP unless noted) Q4 2024\nQuarterly Revenue 4.4M\nSubscription ARR (end of period) 18.3M\nGross Margin 74%\nNet Dollar Retention (LTM) 116%\nAnnual Logo Churn 4.5%\nPaying Customer Logos 379\nAvg. Seats per Customer 141\nTotal Headcount 88\nCommentary\nPeopleFlow delivered Quarterly Revenue of 4.4M in Q4 2024, with end-of-period Subscription ARR reaching 18.3M. Gross Margin\nwas 74%, consistent with the prior-period target range. Headcount additions in Q4 were concentrated in customer success and\nproduct. Average seats per customer of 141 reflects steady module adoption across performance and analytics.\nNon-Core Financial Items\n- Share-based compensation expense: 0.33M\n- No material FX or restructuring items in Q4 2024.\n(1) All figures in GBP unless otherwise stated.\n(2) Net Dollar Retention (LTM) is computed in GBP; the label is maintained for cross-portfolio comparability.\n(3) Logo Churn is annualised on a last-twelve-months basis.\n(4) Gross Margin reflects cloud hosting and third-party data costs only; excludes customer success."
+  ],
+  "extraction": {
+    "company_name": "PeopleFlow HR Systems Ltd.",
+    "business_model": "saas",
+    "reporting_period": "Q4 2024",
+    "reporting_currency": "GBP",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Quarterly Revenue",
+        "value_raw": "4.4M",
+        "period": "Q4 2024",
+        "period_basis": "quarterly",
+        "source_quote": "PeopleFlow delivered Quarterly Revenue of 4.4M in Q4 2024, with end-of-period Subscription ARR reaching 18.3M.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "arr",
+        "raw_label": "Subscription ARR (end of period)",
+        "value_raw": "18.3M",
+        "period": "Q4 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "PeopleFlow delivered Quarterly Revenue of 4.4M in Q4 2024, with end-of-period Subscription ARR reaching 18.3M.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "74%",
+        "period": "Q4 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Gross Margin was 74%, consistent with the prior-period target range.",
+        "page": 1,
+        "source_type": "prose",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "nrr",
+        "raw_label": "Net Dollar Retention (LTM)",
+        "value_raw": "116%",
+        "period": "Q4 2024",
+        "period_basis": "ltm",
+        "source_quote": "Net Dollar Retention (LTM) 116%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "logo_churn",
+        "raw_label": "Annual Logo Churn",
+        "value_raw": "4.5%",
+        "period": "Q4 2024",
+        "period_basis": "ltm",
+        "source_quote": "Annual Logo Churn 4.5%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "88",
+        "period": "Q4 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 88",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

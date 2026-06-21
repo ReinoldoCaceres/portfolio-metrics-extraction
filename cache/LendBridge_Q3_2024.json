@@ -1,0 +1,89 @@
+{
+  "pdf": "LendBridge_Q3_2024.pdf",
+  "model": "gpt-4o-mini-2024-07-18",
+  "text_hash": "7451fd851fdd",
+  "pages": [
+    "LendBridge Capital Corp.\nQ3 2024 Performance Review\nPeriod Ended: Q3 2024\nLendBridge Capital Corp. provides working capital lines to SMEs across North America through a technology-enabled specialty\nfinance model.\nCondensed Income Summary\nItem Q3 2024\nRecognized Revenue $10.8M\nInterest Expense ($3.0M)\nNet Interest Margin 8.9%\nFee & Ancillary Income $0.8M\nGross Margin 59%\nAdjusted Operating Margin 31%\nCredit Portfolio Indicators\nMetric Q3 2024\nTotal Loan Book (gross) $274M\nActive Borrowers 1,250\nAverage Loan Size $75k\nNet Charge-off Rate (LTM) 3.9%\nBalance Sheet Leverage 2.9x\nSenior Covenant Headroom +125bps\nTotal Headcount 169\nPortfolio Sector Mix - Q3 2024\nSector Outstanding Balance Share of Book\nServices $101M 37%\nManufacturing $68M 25%\nRetail $50M 18%\nHospitality $36M 13%\nOther $19M 7%\nAdjusted Operating Margin of 31% in Q3 2024 reflects improved operating leverage as origination volumes grew without\nproportional headcount additions. The margin metric was relabelled from 'Pre-Provision Operating Margin' to align with internal\nmanagement reporting conventions adopted in Q3.",
+    "(1) Adjusted Operating Margin excludes loan loss provisions and non-recurring items; formerly 'Pre-Provision Operating Margin'.\n(2) Net Charge-off Rate is on a last-twelve-months (LTM) basis.\n(3) Fee & Ancillary Income includes origination fees, prepayment premiums, and treasury service charges."
+  ],
+  "extraction": {
+    "company_name": "LendBridge Capital Corp.",
+    "business_model": "lender",
+    "reporting_period": "Q3 2024",
+    "reporting_currency": "USD",
+    "metrics": [
+      {
+        "canonical_metric": "recognized_revenue",
+        "raw_label": "Recognized Revenue",
+        "value_raw": "$10.8M",
+        "period": "Q3 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Recognized Revenue $10.8M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "gross_margin",
+        "raw_label": "Gross Margin",
+        "value_raw": "59%",
+        "period": "Q3 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Gross Margin 59%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "headcount",
+        "raw_label": "Total Headcount",
+        "value_raw": "169",
+        "period": "Q3 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Headcount 169",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "net_interest_margin",
+        "raw_label": "Net Interest Margin",
+        "value_raw": "8.9%",
+        "period": "Q3 2024",
+        "period_basis": "quarterly",
+        "source_quote": "Net Interest Margin 8.9%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "total_loan_book",
+        "raw_label": "Total Loan Book (gross)",
+        "value_raw": "$274M",
+        "period": "Q3 2024",
+        "period_basis": "point_in_time",
+        "source_quote": "Total Loan Book (gross) $274M",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      },
+      {
+        "canonical_metric": "charge_off_rate",
+        "raw_label": "Net Charge-off Rate (LTM)",
+        "value_raw": "3.9%",
+        "period": "Q3 2024",
+        "period_basis": "ltm",
+        "source_quote": "Net Charge-off Rate (LTM) 3.9%",
+        "page": 1,
+        "source_type": "table",
+        "match_type": "exact",
+        "note": ""
+      }
+    ]
+  }
+}

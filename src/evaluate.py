@@ -12,10 +12,13 @@ import pandas as pd
 _GT_PATH = Path(__file__).resolve().parent.parent / "ground_truth.csv"
 
 
-def _close(expected: float, got: float | None) -> bool:
-    if got is None:
+def _match(expected_val: float, expected_unit: str, row: dict | None) -> bool:
+    """Correct requires BOTH the number AND the unit to match (43% != 43 bps)."""
+    if row is None or row.get("value") is None:
         return False
-    return abs(got - expected) <= 0.05 + 0.01 * abs(expected)
+    if str(row.get("unit")) != str(expected_unit):
+        return False
+    return abs(row["value"] - expected_val) <= 0.05 + 0.01 * abs(expected_val)
 
 
 def evaluate(rows: list[dict]) -> dict:
@@ -26,14 +29,13 @@ def evaluate(rows: list[dict]) -> dict:
     for _, g in gt.iterrows():
         key = (g["company_key"], g["metric"], g["period"])
         row = idx.get(key)
-        got = row["value"] if row else None
-        if _close(float(g["expected_value"]), got):
+        if _match(float(g["expected_value"]), g["expected_unit"], row):
             correct += 1
         else:
             misses.append({
                 "company_key": g["company_key"], "metric": g["metric"],
                 "expected": f"{g['expected_value']} {g['expected_unit']}",
-                "got": (f"{got} {row['unit']}" if row else "NOT FOUND"),
+                "got": (f"{row['value']} {row['unit']}" if row else "NOT FOUND"),
                 "note": g.get("note", ""),
             })
     return {

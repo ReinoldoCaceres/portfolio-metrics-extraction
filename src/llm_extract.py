@@ -78,20 +78,21 @@ def load_or_extract(pdf_path: Path, client: LLMClient | None, force: bool) -> di
     'pages' (cleaned page text) is cached too so the provenance check and the
     whole downstream run work offline without re-reading the PDF.
     """
-    pages = read_pages(pdf_path)
-    doc_text = document_text(pages)
-    th = _text_hash(doc_text)
     cache_file = _cache_path(pdf_path)
 
+    # Replay path: return the cached record without re-reading the PDF (offline, fast).
     if not force and cache_file.exists():
-        record = json.loads(cache_file.read_text(encoding="utf-8"))
-        return record
+        return json.loads(cache_file.read_text(encoding="utf-8"))
 
     if client is None:
         raise RuntimeError(
             f"No cache for {pdf_path.name} and extraction is disabled. "
             f"Run with --extract to build the cache first."
         )
+
+    pages = read_pages(pdf_path)
+    doc_text = document_text(pages)
+    th = _text_hash(doc_text)
 
     extraction = client.extract(config.build_system_prompt(), doc_text)
     record = {

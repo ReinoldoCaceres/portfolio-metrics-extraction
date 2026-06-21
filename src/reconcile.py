@@ -17,6 +17,7 @@ from pathlib import Path
 
 import yaml
 
+from . import config
 from .normalize import normalize_value
 
 _RECON_PATH = Path(__file__).resolve().parent.parent / "reconciliation.yaml"
@@ -71,8 +72,9 @@ def cross_check(rows: list[dict], recon: dict) -> list[dict]:
         elif snap_raw is not None and ours is None:
             rec["status"] = "snapshot_only"
         elif snap_raw is not None and ours is not None:
-            # compare normalized magnitudes (unit-agnostic numeric agreement)
-            a = normalize_value(snap_raw, "currency").value
+            # compare normalized magnitudes using the metric's own unit type
+            ut = config.CANONICAL_METRICS.get(metric, {}).get("unit_type", "currency")
+            a = normalize_value(snap_raw, ut).value
             b = ours.get("value")
             rec["status"] = "agree" if (a is not None and b is not None and abs(a - b) < 0.05) else "mismatch"
         else:

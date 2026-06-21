@@ -61,7 +61,7 @@ CarbonTrack Analytics Corp.,saas,USD,cash,Cash,Cash Balance,$13.8M,13.8,M,Q2 202
 CarbonTrack Analytics Corp.,saas,USD,gross_margin,Gross Margin,Gross Margin,73%,73.0,%,Q2 2025,quarterly,table,exact,verified,1,CarbonTrack_Q2_2025.pdf,Gross Margin 73% 72%,Gross Margin excludes customer success and data science costs.
 CarbonTrack Analytics Corp.,saas,USD,headcount,Headcount,Total Headcount,78,78.0,count,Q2 2025,point_in_time,table,exact,verified,1,CarbonTrack_Q2_2025.pdf,Total Headcount 78 72,
 CarbonTrack Analytics Corp.,saas,USD,logo_churn,Logo Churn,Logo Churn (LTM),3.8%,3.8,%,Q2 2025,ltm,table,exact,verified,1,CarbonTrack_Q2_2025.pdf,Logo Churn (LTM) 3.8% 4.1%,
-CarbonTrack Analytics Corp.,saas,USD,net_burn,Net Burn,Monthly Net Burn,($0.55M),-0.55,M,Q2 2025,monthly,table,exact,verified,1,CarbonTrack_Q2_2025.pdf,Monthly Net Burn ($0.55M) ($0.61M),
+CarbonTrack Analytics Corp.,saas,USD,net_burn,Net Burn (mo),Monthly Net Burn,($0.55M),-0.55,M,Q2 2025,monthly,table,exact,verified,1,CarbonTrack_Q2_2025.pdf,Monthly Net Burn ($0.55M) ($0.61M),
 CarbonTrack Analytics Corp.,saas,USD,nrr,Net Revenue Retention,Net Revenue Retention (LTM),121%,121.0,%,Q2 2025,ltm,table,exact,verified,1,CarbonTrack_Q2_2025.pdf,Net Revenue Retention (LTM) 121% 118%,
 CarbonTrack Analytics Corp.,saas,USD,recognized_revenue,Recognized Revenue,Recognized Revenue,$4.1M,4.1,M,Q2 2025,quarterly,table,exact,verified,1,CarbonTrack_Q2_2025.pdf,Recognized Revenue $4.1M $3.8M,
 CarbonTrack Analytics Corp.,saas,USD,revenue_per_headcount,"Rev/Head ($K, qtr)",(derived),,52.6,k,Q2 2025,quarterly,derived,inferred,derived,0,CarbonTrack_Q2_2025.pdf,$4.1M / 78 employees,derived = revenue/headcount
@@ -71,7 +71,7 @@ ConstructIQ Solutions Inc.,saas,USD,cash_runway_months,Cash Runway (months),Cash
 ConstructIQ Solutions Inc.,saas,USD,gross_margin,Gross Margin,Gross Margin,71%,71.0,%,Q2 2025,quarterly,table,exact,verified,1,ConstructIQ_Q2_2025.pdf,Gross Margin 71% 70%,
 ConstructIQ Solutions Inc.,saas,USD,headcount,Headcount,Total Headcount,89,89.0,count,Q2 2025,point_in_time,table,exact,verified,1,ConstructIQ_Q2_2025.pdf,Total Headcount 89 84,
 ConstructIQ Solutions Inc.,saas,USD,logo_churn,Logo Churn,Logo Churn (LTM),6.3%,6.3,%,Q2 2025,ltm,table,exact,verified,1,ConstructIQ_Q2_2025.pdf,Logo Churn (LTM) 6.3% 6.8%,
-ConstructIQ Solutions Inc.,saas,USD,net_burn,Net Burn,Quarterly Net Burn,($0.91M),-0.91,M,Q2 2025,quarterly,table,exact,verified,1,ConstructIQ_Q2_2025.pdf,Quarterly Net Burn ($0.91M) ($0.97M),
+ConstructIQ Solutions Inc.,saas,USD,net_burn,Net Burn (mo),Quarterly Net Burn,($0.91M),-0.91,M,Q2 2025,quarterly,table,exact,verified,1,ConstructIQ_Q2_2025.pdf,Quarterly Net Burn ($0.91M) ($0.97M),
 ConstructIQ Solutions Inc.,saas,USD,nrr,Net Revenue Retention,Net Revenue Retention (LTM),112%,112.0,%,Q2 2025,ltm,table,exact,verified,1,ConstructIQ_Q2_2025.pdf,Net Revenue Retention (LTM) 112% 110%,
 ConstructIQ Solutions Inc.,saas,USD,recognized_revenue,Recognized Revenue,Quarterly Recognized Revenue,$4.5M,4.5,M,Q2 2025,quarterly,table,exact,verified,1,ConstructIQ_Q2_2025.pdf,Quarterly Recognized Revenue $4.5M $4.2M,
 ConstructIQ Solutions Inc.,saas,USD,revenue_per_headcount,"Rev/Head ($K, qtr)",(derived),,50.6,k,Q2 2025,quarterly,derived,inferred,derived,0,ConstructIQ_Q2_2025.pdf,$4.5M / 89 employees,derived = revenue/headcount
@@ -95,7 +95,7 @@ NovaCloud Analytics Inc.,saas,USD,cash,Cash,Cash Balance,$21.3M,21.3,M,Q1 2025,p
 NovaCloud Analytics Inc.,saas,USD,gross_margin,Gross Margin,Gross Margin,77%,77.0,%,Q1 2025,point_in_time,table,exact,verified,1,NovaCloud_Q1_2025.pdf,Gross Margin 77%,
 NovaCloud Analytics Inc.,saas,USD,headcount,Headcount,Total Headcount,135,135.0,count,Q1 2025,point_in_time,table,exact,verified,1,NovaCloud_Q1_2025.pdf,Total Headcount 135,
 NovaCloud Analytics Inc.,saas,USD,logo_churn,Logo Churn,Logo Churn (LTM),6.1%,6.1,%,Q1 2025,ltm,table,exact,verified,1,NovaCloud_Q1_2025.pdf,Logo Churn (LTM) 6.1%,
-NovaCloud Analytics Inc.,saas,USD,net_burn,Net Burn,Monthly Net Burn,($0.82M),-0.82,M,Q1 2025,monthly,table,exact,verified,1,NovaCloud_Q1_2025.pdf,Monthly Net Burn ($0.82M),
+NovaCloud Analytics Inc.,saas,USD,net_burn,Net Burn (mo),Monthly Net Burn,($0.82M),-0.82,M,Q1 2025,monthly,table,exact,verified,1,NovaCloud_Q1_2025.pdf,Monthly Net Burn ($0.82M),
 NovaCloud Analytics Inc.,saas,USD,nrr,Net Revenue Retention,NRR (LTM),121%,121.0,%,Q1 2025,ltm,table,exact,verified,1,NovaCloud_Q1_2025.pdf,NRR (LTM) 121%,
 NovaCloud Analytics Inc.,saas,USD,recognized_revenue,Recognized Revenue,Recognized Revenue (USD),$7.9M,7.9,M,Q1 2025,quarterly,prose,exact,verified,1,NovaCloud_Q1_2025.pdf,Recognized Revenue of $7.9M in Q1 2025 reflects continued momentum in both new logo additions (13 in the quarter) and expansion.,
 NovaCloud Analytics Inc.,saas,USD,revenue_per_headcount,"Rev/Head ($K, qtr)",(derived),,58.5,k,Q1 2025,quarterly,derived,inferred,derived,0,NovaCloud_Q1_2025.pdf,$7.9M / 135 employees,derived = revenue/headcount
@@ -105,7 +105,7 @@ NovaCloud Analytics Inc.,saas,USD,cash_runway_months,Cash Runway (months),Cash R
 NovaCloud Analytics Inc.,saas,USD,gross_margin,Gross Margin,Gross Margin,74%,74.0,%,Q2 2024,point_in_time,table,exact,verified,1,NovaCloud_Q2_2024.pdf,Gross Margin 74%,
 NovaCloud Analytics Inc.,saas,USD,headcount,Headcount,Total Headcount,112,112.0,count,Q2 2024,point_in_time,table,exact,verified,1,NovaCloud_Q2_2024.pdf,Total Headcount 112,
 NovaCloud Analytics Inc.,saas,USD,logo_churn,Logo Churn,Logo Churn Rate (LTM),7.8%,7.8,%,Q2 2024,ltm,table,exact,verified,1,NovaCloud_Q2_2024.pdf,Logo Churn Rate (LTM) 7.8%,
-NovaCloud Analytics Inc.,saas,USD,net_burn,Net Burn,Monthly Net Burn,($0.98M),-0.98,M,Q2 2024,monthly,table,exact,verified,1,NovaCloud_Q2_2024.pdf,Monthly Net Burn ($0.98M),
+NovaCloud Analytics Inc.,saas,USD,net_burn,Net Burn (mo),Monthly Net Burn,($0.98M),-0.98,M,Q2 2024,monthly,table,exact,verified,1,NovaCloud_Q2_2024.pdf,Monthly Net Burn ($0.98M),
 NovaCloud Analytics Inc.,saas,USD,nrr,Net Revenue Retention,Net Dollar Retention (LTM),115%,115.0,%,Q2 2024,ltm,table,exact,verified,1,NovaCloud_Q2_2024.pdf,Net Dollar Retention (LTM) 115%,
 NovaCloud Analytics Inc.,saas,USD,recognized_revenue,Recognized Revenue,Total Billings (USD),$5.8M,5.8,M,Q2 2024,quarterly,prose,exact,verified,1,NovaCloud_Q2_2024.pdf,Total Billings of $5.8M in Q2 2024 reflects the transaction-based revenue model.,
 NovaCloud Analytics Inc.,saas,USD,revenue_per_headcount,"Rev/Head ($K, qtr)",(derived),,51.8,k,Q2 2024,quarterly,derived,inferred,derived,0,NovaCloud_Q2_2024.pdf,$5.8M / 112 employees,derived = revenue/headcount
@@ -114,7 +114,7 @@ NovaCloud Analytics Inc.,saas,USD,cash,Cash,Cash Balance,$19.6M,19.6,M,Q2 2025,p
 NovaCloud Analytics Inc.,saas,USD,gross_margin,Gross Margin,Gross Margin,78%,78.0,%,Q2 2025,point_in_time,prose,exact,verified,1,NovaCloud_Q2_2025.pdf,Gross margin improved to 78% as NovaCloud continued optimising its cloud infrastructure.,
 NovaCloud Analytics Inc.,saas,USD,headcount,Headcount,Total Headcount,142,142.0,count,Q2 2025,point_in_time,table,exact,verified,1,NovaCloud_Q2_2025.pdf,Total Headcount 142,
 NovaCloud Analytics Inc.,saas,USD,logo_churn,Logo Churn,Logo Churn (LTM),5.8%,5.8,%,Q2 2025,ltm,table,exact,verified,1,NovaCloud_Q2_2025.pdf,Logo Churn (LTM) 5.8%,
-NovaCloud Analytics Inc.,saas,USD,net_burn,Net Burn,Monthly Net Burn,($0.75M),-0.75,M,Q2 2025,monthly,table,exact,verified,1,NovaCloud_Q2_2025.pdf,Monthly Net Burn ($0.75M),excludes non-cash stock-based compensation of $0.38M.
+NovaCloud Analytics Inc.,saas,USD,net_burn,Net Burn (mo),Monthly Net Burn,($0.75M),-0.75,M,Q2 2025,monthly,table,exact,verified,1,NovaCloud_Q2_2025.pdf,Monthly Net Burn ($0.75M),excludes non-cash stock-based compensation of $0.38M.
 NovaCloud Analytics Inc.,saas,USD,nrr,Net Revenue Retention,Net Dollar Retention,123%,123.0,%,Q2 2025,ltm,table,renamed_per_footnote,verified,1,NovaCloud_Q2_2025.pdf,Net Dollar Retention 123%,
 NovaCloud Analytics Inc.,saas,USD,recognized_revenue,Recognized Revenue,Recognized Revenue (USD),$8.4M,8.4,M,Q2 2025,quarterly,prose,exact,verified,1,NovaCloud_Q2_2025.pdf,"Recognized Revenue in Q2 2025 was $8.4M, up 6% quarter-over-quarter and 32% year-over-year.",
 NovaCloud Analytics Inc.,saas,USD,revenue_per_headcount,"Rev/Head ($K, qtr)",(derived),,59.2,k,Q2 2025,quarterly,derived,inferred,derived,0,NovaCloud_Q2_2025.pdf,$8.4M / 142 employees,derived = revenue/headcount
@@ -124,7 +124,7 @@ NovaCloud Analytics Inc.,saas,USD,cash_runway_months,Cash Runway (months),Cash R
 NovaCloud Analytics Inc.,saas,USD,gross_margin,Gross Margin,Gross Margin,75%,75.0,%,Q3 2024,point_in_time,table,exact,verified,1,NovaCloud_Q3_2024.pdf,Gross Margin 75%,
 NovaCloud Analytics Inc.,saas,USD,headcount,Headcount,Total Headcount,120,120.0,count,Q3 2024,point_in_time,table,exact,verified,1,NovaCloud_Q3_2024.pdf,Total Headcount 120,
 NovaCloud Analytics Inc.,saas,USD,logo_churn,Logo Churn,Logo Churn Rate (LTM),7.2%,7.2,%,Q3 2024,ltm,table,exact,verified,1,NovaCloud_Q3_2024.pdf,Logo Churn Rate (LTM) 7.2%,
-NovaCloud Analytics Inc.,saas,USD,net_burn,Net Burn,Monthly Net Burn,($0.95M),-0.95,M,Q3 2024,monthly,table,exact,verified,1,NovaCloud_Q3_2024.pdf,Monthly Net Burn ($0.95M),
+NovaCloud Analytics Inc.,saas,USD,net_burn,Net Burn (mo),Monthly Net Burn,($0.95M),-0.95,M,Q3 2024,monthly,table,exact,verified,1,NovaCloud_Q3_2024.pdf,Monthly Net Burn ($0.95M),
 NovaCloud Analytics Inc.,saas,USD,nrr,Net Revenue Retention,Net Dollar Retention (LTM),117%,117.0,%,Q3 2024,ltm,table,exact,verified,1,NovaCloud_Q3_2024.pdf,Net Dollar Retention (LTM) 117%,
 NovaCloud Analytics Inc.,saas,USD,recognized_revenue,Recognized Revenue,Recognized Revenue (USD),$6.5M,6.5,M,Q3 2024,quarterly,prose,exact,verified,1,NovaCloud_Q3_2024.pdf,"Recognized Revenue of $6.5M in Q3 2024 was up 12% quarter-over-quarter, driven by a combination of new logo additions (10 in the quarter) and expansion within the existing customer base.",
 NovaCloud Analytics Inc.,saas,USD,revenue_per_headcount,"Rev/Head ($K, qtr)",(derived),,54.2,k,Q3 2024,quarterly,derived,inferred,derived,0,NovaCloud_Q3_2024.pdf,$6.5M / 120 employees,derived = revenue/headcount
@@ -134,7 +134,7 @@ NovaCloud Analytics Inc.,saas,USD,cash_runway_months,Cash Runway (months),Cash R
 NovaCloud Analytics Inc.,saas,USD,gross_margin,Gross Margin,Gross Margin,76%,76.0,%,Q4 2024,unknown,prose,exact,verified,1,NovaCloud_Q4_2024.pdf,"Gross margin came in at 76%, a one-point improvement versus Q3, reflecting continued cloud infrastructure efficiency gains.",
 NovaCloud Analytics Inc.,saas,USD,headcount,Headcount,Total Headcount,128,128.0,count,Q4 2024,point_in_time,prose,exact,verified,1,NovaCloud_Q4_2024.pdf,Headcount of 128 at quarter-end reflects selective additions in product and infrastructure engineering.,
 NovaCloud Analytics Inc.,saas,USD,logo_churn,Logo Churn,Logo Churn Rate (LTM),6.5%,6.5,%,Q4 2024,ltm,table,exact,verified,1,NovaCloud_Q4_2024.pdf,Logo Churn Rate (LTM) 6.5%,
-NovaCloud Analytics Inc.,saas,USD,net_burn,Net Burn,Monthly Net Burn,($0.88M),-0.88,M,Q4 2024,monthly,table,exact,verified,1,NovaCloud_Q4_2024.pdf,Monthly Net Burn ($0.88M),
+NovaCloud Analytics Inc.,saas,USD,net_burn,Net Burn (mo),Monthly Net Burn,($0.88M),-0.88,M,Q4 2024,monthly,table,exact,verified,1,NovaCloud_Q4_2024.pdf,Monthly Net Burn ($0.88M),
 NovaCloud Analytics Inc.,saas,USD,nrr,Net Revenue Retention,Net Dollar Retention,119%,119.0,%,Q4 2024,ltm,prose,exact,quote_not_found,1,NovaCloud_Q4_2024.pdf,"Net dollar retention on a trailing-twelve-month basis reached 119% in Q4 2024, improving from 116% in Q3 2024.",
 NovaCloud Analytics Inc.,saas,USD,recognized_revenue,Recognized Revenue,Net Revenue (USD),$7.2M,7.2,M,Q4 2024,quarterly,prose,renamed_per_footnote,verified,1,NovaCloud_Q4_2024.pdf,Net Revenue of $7.2M in Q4 2024 represented an 11% increase over the prior quarter.,
 NovaCloud Analytics Inc.,saas,USD,revenue_per_headcount,"Rev/Head ($K, qtr)",(derived),,56.2,k,Q4 2024,quarterly,derived,inferred,derived,0,NovaCloud_Q4_2024.pdf,$7.2M / 128 employees,derived = revenue/headcount
@@ -164,7 +164,7 @@ TalentVault Inc.,saas,USD,cash,Cash,Cash Balance,$17.9M,17.9,M,Q2 2025,point_in_
 TalentVault Inc.,saas,USD,gross_margin,Gross Margin,Gross Margin,76%,76.0,%,Q2 2025,quarterly,table,exact,verified,1,TalentVault_Q2_2025.pdf,Gross Margin 76% 75%,
 TalentVault Inc.,saas,USD,gross_revenue_retention,Gross Revenue Retention,Gross Revenue Retention (LTM),91%,91.0,%,Q2 2025,ltm,table,exact,verified,1,TalentVault_Q2_2025.pdf,Gross Revenue Retention (LTM) 91% 90%,
 TalentVault Inc.,saas,USD,headcount,Headcount,Total Headcount,103,103.0,count,Q2 2025,point_in_time,table,exact,verified,1,TalentVault_Q2_2025.pdf,Total Headcount 103 97,
-TalentVault Inc.,saas,USD,net_burn,Net Burn,Monthly Net Burn,($0.68M),-0.68,M,Q2 2025,monthly,table,exact,verified,1,TalentVault_Q2_2025.pdf,Monthly Net Burn ($0.68M) ($0.74M),excludes non-cash stock-based compensation ($0.42M/quarter)
+TalentVault Inc.,saas,USD,net_burn,Net Burn (mo),Monthly Net Burn,($0.68M),-0.68,M,Q2 2025,monthly,table,exact,verified,1,TalentVault_Q2_2025.pdf,Monthly Net Burn ($0.68M) ($0.74M),excludes non-cash stock-based compensation ($0.42M/quarter)
 TalentVault Inc.,saas,USD,nrr,Net Revenue Retention,Net Revenue Retention (LTM),119%,119.0,%,Q2 2025,ltm,table,exact,verified,1,TalentVault_Q2_2025.pdf,Net Revenue Retention (LTM) 119% 116%,
 TalentVault Inc.,saas,USD,recognized_revenue,Recognized Revenue,Quarterly Revenue (recognized),$5.5M,5.5,M,Q2 2025,quarterly,table,exact,verified,1,TalentVault_Q2_2025.pdf,Quarterly Revenue (recognized) $5.5M $5.1M,
 TalentVault Inc.,saas,USD,revenue_per_headcount,"Rev/Head ($K, qtr)",(derived),,53.4,k,Q2 2025,quarterly,derived,inferred,derived,0,TalentVault_Q2_2025.pdf,$5.5M / 103 employees,derived = revenue/headcount

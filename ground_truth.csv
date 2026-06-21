@@ -21,6 +21,7 @@ constructiq,gross_margin,Q2 2025,71,%,
 constructiq,headcount,Q2 2025,89,count,
 constructiq,arr,Q2 2025,18.6,M,
 constructiq,nrr,Q2 2025,112,%,
+constructiq,net_burn,Q2 2025,-0.91,M,quarterly basis (raw value)
 medisight,recognized_revenue,Q2 2025,6.8,M,bare number = USD
 medisight,gross_margin,Q2 2025,77,%,
 medisight,headcount,Q2 2025,121,count,

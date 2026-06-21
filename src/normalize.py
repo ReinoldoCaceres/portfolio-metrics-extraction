@@ -25,14 +25,19 @@ class Norm:
     ok: bool
 
 
-_NUM = r"[-+]?\d{1,3}(?:,\d{3})*(?:\.\d+)?|\d+(?:\.\d+)?"
+# Match a full number including thousands commas; commas are stripped AFTER matching
+# (stripping before would let the regex stop after the first 3 digits of a >=1000 value).
+_NUM = r"[-+]?\d[\d,]*(?:\.\d+)?"
 
 
 def _strip_sign(s: str) -> tuple[str, bool]:
     s = s.strip()
     neg = False
-    if s.startswith("(") and s.endswith(")"):
-        neg, s = True, s[1:-1].strip()
+    # Parenthesized negatives, possibly with a leading currency symbol, e.g. ($0.75M) or $(5M).
+    if "(" in s and ")" in s:
+        i, j = s.find("("), s.rfind(")")
+        s = (s[:i] + s[i + 1:j]).strip()
+        neg = True
     if s.startswith("+"):
         s = s[1:].strip()
     elif s.startswith("-"):
@@ -41,11 +46,11 @@ def _strip_sign(s: str) -> tuple[str, bool]:
 
 
 def _first_number(s: str) -> float | None:
-    m = re.search(_NUM, s.replace(",", ""))
+    m = re.search(_NUM, s)
     if not m:
         return None
     try:
-        return float(m.group(0))
+        return float(m.group(0).replace(",", ""))
     except ValueError:
         return None
 

@@ -1,6 +1,6 @@
-,Recognized Revenue,Gross Margin,Headcount,Cash,Net Burn,"Rev/Head ($K, qtr)",ARR,Net Revenue Retention,Gross Revenue Retention,Logo Churn,Cash Runway (months),Net Interest Margin,Total Loan Book (gross),Net Charge-off / Credit Loss Rate,Provision Coverage Ratio,Total Payment Volume (TPV),Take Rate
+,Recognized Revenue,Gross Margin,Headcount,Cash,Net Burn (mo),"Rev/Head ($K, qtr)",ARR,Net Revenue Retention,Gross Revenue Retention,Logo Churn,Cash Runway (months),Net Interest Margin,Total Loan Book (gross),Net Charge-off / Credit Loss Rate,Provision Coverage Ratio,Total Payment Volume (TPV),Take Rate
 CarbonTrack Analytics Corp.  [saas],$4.1M,73%,78,$13.8M,($550k),$53k,$16.9M,121%,--,3.8%,--,n/a,n/a,n/a,n/a,n/a,n/a
-ConstructIQ Solutions Inc.  [saas],$4.5M,71%,89,$11.2M,($910k),$51k,$18.6M,112%,--,6.3%,12mo ~,n/a,n/a,n/a,n/a,n/a,n/a
+ConstructIQ Solutions Inc.  [saas],$4.5M,71%,89,$11.2M,($303k) (q->mo),$51k,$18.6M,112%,--,6.3%,12mo ~,n/a,n/a,n/a,n/a,n/a,n/a
 MediSight Data Platform Inc.  [saas],$6.8M,77%,121,--,--,$56k,$27.9M,--,--,--,--,n/a,n/a,n/a,n/a,n/a,n/a
 NovaCloud Analytics Inc.  [saas],$8.4M ~,78% ~,142,$19.6M,($750k),$59k,$34.2M ~,123%,--,5.8%,--,n/a,n/a,n/a,n/a,n/a,n/a
 PeopleFlow HR Systems Ltd.  [saas],£5.1M ~,73% ~,96,--,--,£53k,£21.4M ~,118%,--,4.2%,--,n/a,n/a,n/a,n/a,n/a,n/a

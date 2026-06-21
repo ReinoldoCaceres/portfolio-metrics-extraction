@@ -140,6 +140,11 @@ def format_value(value, unit, currency) -> str:
 
 def _cell(row: dict | None, company_cohort: str, metric: str, restated_keys: set) -> str:
     if row is not None:
+        # Net burn is shown on a common MONTHLY basis so a quarterly reporter (ConstructIQ)
+        # is not compared ~3x wrong against monthly peers; mark converted cells.
+        if metric == "net_burn" and row["period_basis"] == "quarterly":
+            mv = monthly_from_basis(row["value"], row["unit"], "quarterly")
+            return format_value(mv, row["unit"], row["currency"]) + " (q->mo)"
         txt = format_value(row["value"], row["unit"], row["currency"])
         st = row["source_type"]
         if st == "prose":

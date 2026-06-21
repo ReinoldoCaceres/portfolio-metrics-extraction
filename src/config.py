@@ -87,7 +87,7 @@ CANONICAL_METRICS = {
                       "available, prefer the headline cash balance and note any caveat.",
     },
     "net_burn": {
-        "display": "Net Burn",
+        "display": "Net Burn (mo)",
         "cohort": "core",
         "unit_type": "currency",
         "definition": "Net cash burn. CRITICAL: capture period_basis. Most report MONTHLY net burn; "

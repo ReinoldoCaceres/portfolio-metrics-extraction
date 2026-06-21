@@ -3,6 +3,9 @@
 Extract a comparable set of operating/financial metrics from a folder of heterogeneous
 portfolio-company PDF reports, with a provenance trail so each number can be trusted.
 
+> This README doubles as the written note: the approach, key decisions/assumptions, scope,
+> and next steps are all below.
+
 ## The problem (start here)
 
 Sagard already builds a cross-company quarterly snapshot **by hand** — a copy is in this
@@ -64,7 +67,11 @@ PDFs ──pdfplumber──▶ per-doc LLM extraction ──▶ normalize + prov
 pip install -r requirements.txt
 
 python run.py            # default: REPLAY from committed cache/ — no API key, deterministic
-python run.py --extract  # re-run the live LLM extraction (needs OPENAI_API_KEY in .env)
+python -m pytest -q      # unit tests for the deterministic layer
+
+# only if you want to re-run the live extraction:
+cp .env.example .env     # then paste your OpenAI key into .env
+python run.py --extract  # re-run the live LLM extraction and refresh the cache
 ```
 
 The LLM call is the only non-deterministic, billable step, so its output is **committed to
@@ -74,7 +81,8 @@ with no key; in production that cache is also the audit trail and the cost contr
 ## Output
 
 - `outputs/metrics_long.csv` — one row per (company, period, metric) with value, unit, currency,
-  source quote, page, source type, match type, and provenance status. The source of truth.
+  source quote, page, source type, match type, and provenance status. The source of truth, and
+  the **dashboard data model**: it is already the shape a BI tool or internal report would read.
 - `outputs/metrics_pivot_q2_2025.csv` — the review pivot: 9 companies grouped by cohort × metric.
   Cell markers (the console legend shows only the ones present in a given view): `~` found in
   prose · `(ftn)` found in a footnote · `*restated` a restatement conflict exists · `--` in scope
@@ -107,8 +115,16 @@ with no key; in production that cache is also the audit trail and the cost contr
   default to the document's stated currency (USD if unstated).
 - **All figures are unaudited management estimates** (the documents say so); this is a
   review-ready artifact, not an authoritative one.
-- **Net burn carries its period basis.** ConstructIQ reports *quarterly* burn while others report
-  *monthly*; the basis is preserved so a comparison is never ~3x wrong.
+- **Net burn is shown on a common monthly basis.** ConstructIQ reports *quarterly* burn while
+  others report *monthly*; the pivot converts it (marked `(q→mo)`) so a comparison is never ~3x
+  wrong, and the long CSV keeps the raw value plus its `period_basis`.
+- **Model: gpt-4o-mini** (the model available on the key), chosen for cost/speed. It is never
+  blindly trusted — every value is provenance-checked and scored against ground truth, so model
+  errors surface deterministically rather than hiding behind a self-reported confidence. A larger
+  model is a one-line change in `config.py`.
+- **Provenance is a substring check** (the value's digits appear in the cited quote). It is
+  deliberately loose for the PoC — it still caught 2/147 quotes the model partly embellished —
+  and strict tokenized matching is named as a next step.
 - **Output is the Q2 2025 cross-section.** The ~13 non-Q2 PDFs are kept in the long CSV (and used
   for entity/rebrand evidence) but filtered out of the pivot.
 - **The Portfolio Snapshot is treated as the artifact being automated**, used as a cross-check

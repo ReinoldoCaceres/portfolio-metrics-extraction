@@ -30,7 +30,7 @@ from src.pdf_text import list_pdfs
 
 ROOT = Path(__file__).resolve().parent
 
-# The Portfolio Snapshot is Sagard's hand-built artifact (the thing we automate);
+# The Portfolio Snapshot is the portfolio team's hand-built artifact (the thing we automate);
 # it is used as a cross-check oracle via reconciliation.yaml, not extracted as a source.
 SNAPSHOT_MARKER = "Portfolio_Snapshot"
 
@@ -69,7 +69,7 @@ def main() -> None:
     xc = reconcile.cross_check(rows, recon)
     restate = reconcile.restatement_conflicts(recon)
     _write_recon_report(xc, restate, Path(args.out))
-    print("--- reconciliation cross-check vs Sagard's manual snapshot ---")
+    print("--- reconciliation cross-check vs the manual snapshot ---")
     for r in xc:
         print(f"  [{r['status']:<20}] {r['company_key']}/{r['metric']}: "
               f"snapshot={r['snapshot_value']} pipeline={r['pipeline_value']}")
@@ -105,7 +105,7 @@ def _legend(pivot: pd.DataFrame) -> str:
 def _write_recon_report(xc, restate, outdir: Path) -> None:
     outdir.mkdir(exist_ok=True)
     lines = ["# Reconciliation report\n",
-             "## Cross-check vs Sagard's manual Q2 2025 snapshot\n",
+             "## Cross-check vs the manual Q2 2025 snapshot\n",
              "| company | metric | snapshot | pipeline | status | note |",
              "|---|---|---|---|---|---|"]
     for r in xc:

@@ -13,7 +13,7 @@ entity_aliases:
     reason: "Rebrand effective 2025-04-01; Apex Freight is the successor entity to FleetLink."
     source: "ApexFreight_Q2_2025: 'following the completion of our rebrand from FleetLink Logistics Network, effective 1 April 2025'"
 
-# The Portfolio_Snapshot is Sagard's hand-built quarterly artifact -- the very thing
+# The Portfolio_Snapshot is the portfolio team's hand-built quarterly artifact -- the very thing
 # this tool automates. We use it as a CROSS-CHECK ORACLE, not as a data source. These
 # are the figures it reported (hand-keyed with quotes) so we can validate our automated
 # extraction against the manual baseline and show where the manual one drops data.

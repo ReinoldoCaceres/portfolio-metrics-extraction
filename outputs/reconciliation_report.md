@@ -1,6 +1,6 @@
 # Reconciliation report
 
-## Cross-check vs Sagard's manual Q2 2025 snapshot
+## Cross-check vs the manual Q2 2025 snapshot
 
 | company | metric | snapshot | pipeline | status | note |
 |---|---|---|---|---|---|

@@ -6,7 +6,7 @@ comparing documents (a rebrand, a restatement, the snapshot duplicating a standa
 report) has to live here. For a PoC this consumes a small hand-curated knowledge file
 (reconciliation.yaml); the value of the pass is making the comparison trustworthy:
 - canonicalize company identity across the FleetLink -> Apex rebrand,
-- cross-check our automated numbers against Sagard's manual snapshot (agree / recovered
+- cross-check our automated numbers against the manual snapshot (agree / recovered
   by the pipeline / snapshot-only / mismatch),
 - surface restatements as explicit conflicts instead of silently picking one value.
 """

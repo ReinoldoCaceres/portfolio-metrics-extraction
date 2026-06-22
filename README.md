@@ -16,7 +16,7 @@ portfolio-company PDF reports, with a provenance trail so each number can be tru
 
 ## The problem (start here)
 
-Sagard already builds a cross-company quarterly snapshot **by hand** — a copy is in this
+The portfolio team already builds a cross-company quarterly snapshot **by hand** — a copy is in this
 dataset (`data/Portfolio_Snapshot_Q2_2025.pdf`). It is a useful artifact, and also a clear
 illustration of why doing it manually is risky:
 

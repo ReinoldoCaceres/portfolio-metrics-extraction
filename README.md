@@ -6,6 +6,14 @@ portfolio-company PDF reports, with a provenance trail so each number can be tru
 > This README doubles as the written note: the approach, key decisions/assumptions, scope,
 > and next steps are all below.
 
+## TL;DR
+
+- **What:** turns a folder of heterogeneous portfolio-company PDFs into one comparable, source-traced metrics table.
+- **Run:** `pip install -r requirements.txt && python run.py` — replays from a committed cache, no API key, deterministic.
+- **Result:** 9 companies in 3 business-model cohorts; **100%** on a 49-cell hand-keyed ground truth; every value provenance-checked back to its source quote.
+- **The one deliberate bet:** I treated this as *reconciliation-with-provenance*, not just extraction, because the sample snapshot is incomplete and self-admittedly "not independently verified", and for portfolio financials a confidently-wrong comparable is worse than a blank.
+- **Not built, on purpose:** dashboard/UI, FX conversion, OCR, a production rules-first parser — all named under Next steps.
+
 ## The problem (start here)
 
 Sagard already builds a cross-company quarterly snapshot **by hand** — a copy is in this

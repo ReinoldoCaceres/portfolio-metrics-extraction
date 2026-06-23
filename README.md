@@ -72,10 +72,11 @@ PDFs ──pdfplumber──▶ per-doc LLM extraction ──▶ normalize + prov
 ## How to run
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt   # pipeline + tests + notebook (one install)
 
 python run.py            # default: REPLAY from committed cache/ — no API key, deterministic
 python -m pytest -q      # unit tests for the deterministic layer
+jupyter lab review.ipynb # optional: styled pivot + provenance drill-down
 
 # only if you want to re-run the live extraction:
 cp .env.example .env     # then paste your OpenAI key into .env

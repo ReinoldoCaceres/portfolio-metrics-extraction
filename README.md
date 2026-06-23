@@ -10,7 +10,7 @@ portfolio-company PDF reports, with a provenance trail so each number can be tru
 
 - **What:** turns a folder of heterogeneous portfolio-company PDFs into one comparable, source-traced metrics table.
 - **Run:** `pip install -r requirements.txt && python run.py` — replays from a committed cache, no API key, deterministic.
-- **Result:** 9 companies in 3 business-model cohorts; **100%** on a 49-cell hand-keyed ground truth; every value provenance-checked back to its source quote.
+- **Result:** 9 companies in 3 business-model cohorts; **100%** on a 49-cell hand-keyed ground truth; every value provenance-checked against its source page (144/146 verified; 2 flagged, not dropped).
 - **The one deliberate bet:** I treated this as *reconciliation-with-provenance*, not just extraction, because the sample snapshot is incomplete and self-admittedly "not independently verified", and for portfolio financials a confidently-wrong comparable is worse than a blank.
 - **Not built, on purpose:** dashboard/UI, FX conversion, OCR, a production rules-first parser — all named under Next steps.
 
@@ -85,13 +85,39 @@ python run.py --extract  # re-run the live LLM extraction and refresh the cache
 
 The LLM call is the only non-deterministic, billable step, so its output is **committed to
 `cache/`** and the default run replays from it. A reviewer reproduces the exact numbers offline
-with no key; in production that cache is also the audit trail and the cost control.
+with no key; in production that cache is also the audit trail and the cost control. A full extract
+is ~23 structured calls on gpt-4o-mini (a few cents) and scales linearly per new document. Each
+cached record stores a sha256 of the document's cleaned text (`text_hash`) — the basis for skipping
+unchanged documents on re-extract (content-addressed incremental loading; named as a next step).
 
 ## Output
 
-- `outputs/metrics_long.csv` — one row per (company, period, metric) with value, unit, currency,
-  source quote, page, source type, match type, and provenance status. The source of truth, and
-  the **dashboard data model**: it is already the shape a BI tool or internal report would read.
+- `outputs/metrics_long.csv` — the **canonical long (tidy) table**. **Grain: one row per
+  `(company_key, period, canonical_metric)`** — unique, append-only, full-history. The columns that matter:
+
+  | column | type | notes |
+  |---|---|---|
+  | `company`, `company_key` | str | entity-resolved; `company_key` is the stable join key (FleetLink→Apex collapsed) |
+  | `cohort` | enum | business-model dimension; metrics only comparable within a cohort |
+  | `canonical_metric` | str | stable metric join key (vs `metric_display`, the human label) |
+  | `value_raw` / `value` | str / float | as printed ("$8.4M") / normalized magnitude |
+  | `unit`, `currency` | enum / str | M / % / bps / x / count / months; native currency, no FX |
+  | `period`, `period_basis` | str / enum | canonical "Qn YYYY"; basis (quarterly/ltm/monthly) guards apples-to-apples |
+  | `source_type`, `match_type`, `provenance` | enum | row-level data-quality + lineage |
+  | `page`, `source_doc`, `source_quote` | — | lineage back to the source PDF |
+
+  This is the shape a BI tool, an internal report, **or a dbt source** reads directly.
+
+  **How it lands in a warehouse (dbt terms):** `cache/` is the raw landing zone (one JSON per doc, the
+  audit trail); `normalize`/`reconcile` are the staging→mart transforms; `metrics_long.csv` is the
+  conformed **fact table** (a dbt *source* or seed); `cohort`/`canonical_metric`/`period` are the conformed
+  dimensions; and the provenance + grain-uniqueness checks are exactly the **dbt tests** you'd attach. The
+  pivot is a presentation-layer view derived from this table, never a parallel build.
+
+  **Invariants (the contract):** `(company_key, period, canonical_metric)` is unique (derived rows flagged
+  `provenance=derived`, `page=0`); `cohort` / `unit` / `source_type` / `match_type` / `provenance` are closed
+  enums; `value` is non-additive across the metric dimension and stored in native currency — aggregate within
+  a `(metric, currency)`, not across.
 - `outputs/metrics_pivot_q2_2025.csv` — the review pivot: 9 companies grouped by cohort × metric.
   Cell markers (the console legend shows only the ones present in a given view): `~` found in
   prose · `(ftn)` found in a footnote · `*restated` a restatement conflict exists · `--` in scope
@@ -103,9 +129,10 @@ with no key; in production that cache is also the audit trail and the cost contr
 
 ### Results on this dataset
 
-- **100% (48/48)** on a hand-keyed ground truth spanning all 9 Q2-2025 companies (core + cohort
+- **100% (49/49)** on a hand-keyed ground truth spanning all 9 Q2-2025 companies (core + cohort
   metrics). See `ground_truth.csv`; the harness prints any miss by name.
-- **145/147** extracted values provenance-verified against their source page.
+- **144/146** extracted values provenance-verified against their source page (the harness prints
+  the 2 it flags — both off-period rows where the model embellished the quote).
 - Reconciliation: **recovered** TalentVault's headcount (which the manual snapshot dropped),
   **surfaced** the PeopleFlow Q1 restatement (4.7M → 4.6M) as a conflict instead of silently
   picking one, and confirmed the 4 snapshot figures **agree** with the standalone reports.
@@ -132,7 +159,7 @@ with no key; in production that cache is also the audit trail and the cost contr
   errors surface deterministically rather than hiding behind a self-reported confidence. A larger
   model is a one-line change in `config.py`.
 - **Provenance is a substring check** (the value's digits appear in the cited quote). It is
-  deliberately loose for the PoC — it still caught 2/147 quotes the model partly embellished —
+  deliberately loose for the PoC — it still caught 2/146 quotes the model partly embellished —
   and strict tokenized matching is named as a next step.
 - **Output is the Q2 2025 cross-section.** The ~13 non-Q2 PDFs are kept in the long CSV (and used
   for entity/rebrand evidence) but filtered out of the pivot.
@@ -155,6 +182,14 @@ named below as next steps, not attempted.
 - **Strict, fail-closed provenance** (token-level digit verification) once whitespace artifacts are
   normalized away.
 - **Footnote-driven rename detection at scale** (the PoC reads them; production generalizes).
+- **Productionizing into the data stack:** land `metrics_long.csv` in the warehouse as a dbt *source*,
+  model the pivot/marts downstream, and attach the provenance + grain-uniqueness checks as dbt *tests*;
+  orchestrate the per-doc extraction (Airflow/Dagster) with bounded concurrency; use the stored
+  `text_hash` to skip unchanged documents (content-addressed incremental extraction).
+- **Input resilience (scoped out of this PoC):** per-document skip-and-continue on a corrupt/empty PDF,
+  retry/backoff on the extract API, and surfacing unparseable periods (H1/FY) instead of dropping them.
+- **Presentation polish:** split the Take Rate column into %/bps and drop the `$K` label on Rev/Head
+  when currencies are mixed; a golden-output regression test + pinned dependencies for a maintained pipeline.
 - **Multi-quarter trends** once more history accrues, OCR for scanned PDFs, FX with a sourced rate,
   an audited-vs-management-estimate flag, and a human-review surface for low-confidence cells.
 

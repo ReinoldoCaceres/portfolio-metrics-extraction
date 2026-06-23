@@ -64,7 +64,7 @@
         "raw_label": "Annual Logo Churn",
         "value_raw": "4.3%",
         "period": "Q1 2025",
-        "period_basis": "annual",
+        "period_basis": "ltm",
         "source_quote": "Annual Logo Churn 4.3%",
         "page": 1,
         "source_type": "table",

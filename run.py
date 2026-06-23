@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from collections import Counter
 from pathlib import Path
 
 import pandas as pd
@@ -56,6 +57,12 @@ def main() -> None:
         raise SystemExit(f"error: {e}")
     recon = reconcile.load()
     rows = table.build_long_rows(records, recon)
+
+    # data-quality: the grain (company_key, period, canonical_metric) should be unique.
+    for key, ct in Counter((r["company_key"], r["period"], r["canonical_metric"]) for r in rows).items():
+        if ct > 1:
+            print(f"  [DUP] {ct} rows share grain {key} (last write wins)")
+
     pivot = table.build_pivot(rows, recon)
     table.save_outputs(rows, pivot, args.out)
 
@@ -81,6 +88,10 @@ def main() -> None:
     verified = sum(1 for r in rows if r["provenance"] == "verified")
     checkable = sum(1 for r in rows if r["provenance"] != "derived")
     print(f"\nprovenance: {verified}/{checkable} extracted values verified against source page text")
+    for r in rows:
+        if r["provenance"] not in ("verified", "derived"):
+            print(f"  unverified  {r['company_key']}/{r['canonical_metric']} [{r['provenance']}]: "
+                  f"\"{r['source_quote'][:60]}\"")
 
     # ---- accuracy ----
     acc = evaluate.evaluate(rows)

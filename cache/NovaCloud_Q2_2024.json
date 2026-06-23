@@ -12,23 +12,11 @@
     "reporting_currency": "USD",
     "metrics": [
       {
-        "canonical_metric": "recognized_revenue",
-        "raw_label": "Total Billings (USD)",
-        "value_raw": "$5.8M",
-        "period": "Q2 2024",
-        "period_basis": "quarterly",
-        "source_quote": "Total Billings of $5.8M in Q2 2024 reflects the transaction-based revenue model.",
-        "page": 1,
-        "source_type": "prose",
-        "match_type": "exact",
-        "note": ""
-      },
-      {
         "canonical_metric": "arr",
         "raw_label": "End-of-Period ARR",
         "value_raw": "$24.1M",
         "period": "Q2 2024",
-        "period_basis": "point_in_time",
+        "period_basis": "annual",
         "source_quote": "End-of-Period ARR $24.1M",
         "page": 1,
         "source_type": "table",

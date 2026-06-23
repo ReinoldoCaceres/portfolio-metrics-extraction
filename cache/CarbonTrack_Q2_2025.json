@@ -34,7 +34,7 @@
         "page": 1,
         "source_type": "table",
         "match_type": "exact",
-        "note": "Gross Margin excludes customer success and data science costs."
+        "note": ""
       },
       {
         "canonical_metric": "headcount",
@@ -58,7 +58,7 @@
         "page": 1,
         "source_type": "table",
         "match_type": "exact",
-        "note": "Contracted ARR excludes one-time integration fees and professional services revenue."
+        "note": ""
       },
       {
         "canonical_metric": "nrr",

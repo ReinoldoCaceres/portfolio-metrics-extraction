@@ -89,7 +89,7 @@
         "raw_label": "Provision Coverage Ratio",
         "value_raw": "2.4x",
         "period": "Q2 2025",
-        "period_basis": "unknown",
+        "period_basis": "quarterly",
         "source_quote": "Provision Coverage Ratio 2.4x",
         "page": 1,
         "source_type": "table",

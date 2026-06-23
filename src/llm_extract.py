@@ -10,8 +10,8 @@ The LLM is the only non-deterministic, billable step, so we persist its output
 and rebuild everything downstream deterministically from the cache. In production
 that same cache is the audit trail and the cost control.
 
-The provider is behind a tiny interface (LLMClient). OpenAI today; swapping to
-Azure/Bedrock/Anthropic is one class, not a rewrite.
+The provider is behind a tiny interface (LLMClient). OpenAI today; swapping providers is a
+new adapter class (the structured-output call differs per provider), not a pipeline rewrite.
 """
 from __future__ import annotations
 
@@ -82,7 +82,11 @@ def load_or_extract(pdf_path: Path, client: LLMClient | None, force: bool) -> di
 
     # Replay path: return the cached record without re-reading the PDF (offline, fast).
     if not force and cache_file.exists():
-        return json.loads(cache_file.read_text(encoding="utf-8"))
+        try:
+            return json.loads(cache_file.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as e:
+            raise SystemExit(f"error: cache file {cache_file.name} is corrupt ({e}); "
+                             f"re-run with --extract to rebuild it.")
 
     if client is None:
         raise RuntimeError(

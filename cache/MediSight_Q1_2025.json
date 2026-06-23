@@ -40,7 +40,7 @@
         "raw_label": "Contracted Annual Recurring Revenue",
         "value_raw": "26.1M",
         "period": "Quarter ended Mar 31, 2025",
-        "period_basis": "quarterly",
+        "period_basis": "annual",
         "source_quote": "Contracted Annual Recurring Revenue grew to 26.1M, with 85% of ARR attributable to expansion within existing health systems.",
         "page": 1,
         "source_type": "prose",

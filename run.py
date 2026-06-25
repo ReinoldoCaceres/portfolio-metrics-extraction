@@ -75,14 +75,23 @@ def main() -> None:
     # ---- reconciliation report ----
     xc = reconcile.cross_check(rows, recon)
     restate = reconcile.restatement_conflicts(recon)
-    _write_recon_report(xc, restate, Path(args.out))
+    proposed = reconcile.propose_restatements(records)      # machine proposes...
+    confirmed = reconcile.confirmed_restatement_keys(recon)  # ...human has ratified
+    _write_recon_report(xc, restate, proposed, confirmed, Path(args.out))
     print("--- reconciliation cross-check vs the manual snapshot ---")
     for r in xc:
         print(f"  [{r['status']:<20}] {r['company_key']}/{r['metric']}: "
               f"snapshot={r['snapshot_value']} pipeline={r['pipeline_value']}")
+    # auto-detected from each document's own footnotes/commentary (machine proposes)
+    for p in proposed:
+        tag = ("ratified in yaml"
+               if (p["company_key"], p["metric"], p["period"]) in confirmed else "NEW - needs review")
+        print(f"  [restatement PROPOSED ] {p['company_key']}/{p['metric']} {p['period']}: "
+              f"{p['from_value']} -> {p['to_value']}  (auto-detected p{p['page']}; {tag})")
+    # the human-ratified tier from reconciliation.yaml
     for r in restate:
         vals = " vs ".join(f"{v['value_raw']} ({v['as_reported_in']})" for v in r["values"])
-        print(f"  [restatement        ] {r['company_key']}/{r['metric']} {r['period']}: {vals}")
+        print(f"  [restatement RATIFIED ] {r['company_key']}/{r['metric']} {r['period']}: {vals}")
 
     # ---- provenance summary ----
     verified = sum(1 for r in rows if r["provenance"] == "verified")
@@ -113,7 +122,7 @@ def _legend(pivot: pd.DataFrame) -> str:
     return "legend: " + "  ".join(parts)
 
 
-def _write_recon_report(xc, restate, outdir: Path) -> None:
+def _write_recon_report(xc, restate, proposed, confirmed, outdir: Path) -> None:
     outdir.mkdir(exist_ok=True)
     lines = ["# Reconciliation report\n",
              "## Cross-check vs the manual Q2 2025 snapshot\n",
@@ -122,7 +131,19 @@ def _write_recon_report(xc, restate, outdir: Path) -> None:
     for r in xc:
         lines.append(f"| {r['company_key']} | {r['metric']} | {r['snapshot_value']} | "
                      f"{r['pipeline_value']} | {r['status']} | {r['note']} |")
-    lines.append("\n## Restatements (same company/metric/period, two values)\n")
+    lines.append("\n## Restatements auto-proposed from document text (machine-detected)\n")
+    lines.append("_The pipeline scans each document's own footnotes/commentary for "
+                 "restatement language and proposes the conflict with verbatim evidence; "
+                 "a human ratifies it below._\n")
+    if not proposed:
+        lines.append("_none detected_")
+    for p in proposed:
+        tag = ("ratified in reconciliation.yaml"
+               if (p["company_key"], p["metric"], p["period"]) in confirmed else "NEW - needs human review")
+        lines.append(f"- **{p['company_key']} / {p['metric']} {p['period']}**: "
+                     f"{p['from_value']} → {p['to_value']} _({tag})_<br>"
+                     f"evidence (p{p['page']}, {p['source_doc']}): \"{p['evidence_quote']}\"")
+    lines.append("\n## Restatements ratified in reconciliation.yaml (human-approved tier)\n")
     for r in restate:
         vals = "<br>".join(f"{v['value_raw']} - {v['as_reported_in']}" for v in r["values"])
         lines.append(f"- **{r['company_key']} / {r['metric']} {r['period']}**: {vals}<br>{r['note']}")

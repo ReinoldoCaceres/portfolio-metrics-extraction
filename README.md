@@ -11,7 +11,7 @@ portfolio-company PDF reports, with a provenance trail so each number can be tru
 - **What:** turns a folder of heterogeneous portfolio-company PDFs into one comparable, source-traced metrics table.
 - **Run:** `pip install -r requirements.txt && python run.py` — replays from a committed cache, no API key, deterministic.
 - **Result:** 9 companies in 3 business-model cohorts; **100%** on a 49-cell hand-keyed ground truth; every value provenance-checked against its source page (144/146 verified; 2 flagged, not dropped).
-- **The one deliberate bet:** I treated this as *reconciliation-with-provenance*, not just extraction, because the sample snapshot is incomplete and self-admittedly "not independently verified", and for portfolio financials a confidently-wrong comparable is worse than a blank.
+- **The one deliberate bet:** I treated this as *reconciliation-with-provenance*, not just extraction, because the sample snapshot is incomplete and self-admittedly "not independently verified", and for portfolio financials a confidently-wrong comparable is worse than a blank. Per-document extraction is automated; cross-document facts use a **machine-proposes / human-ratifies** split — restatements are auto-proposed from a document's own footnotes, while the rebrand alias and the snapshot baseline are hand-curated in a small, visible `reconciliation.yaml`.
 - **Not built, on purpose:** dashboard/UI, FX conversion, OCR, a production rules-first parser — all named under Next steps.
 
 ## The problem (start here)
@@ -43,7 +43,7 @@ whole design:
 | Find a metric in a table, in prose ("ended the quarter at 199 employees"), or in a footnote, and map the company's label to a canonical metric | **LLM** (forced JSON) | needs *understanding*, not pattern-matching; regex cannot read a footnoted rename |
 | Parse "$8.4M" / "(\$0.75M)" / "43 bps" into a number + unit | **code** | a printed number is a checkable fact, not a judgment |
 | Verify the model's source quote is really on the page | **code** (substring check) | the model could hallucinate the quote too; a Ctrl-F can't |
-| Resolve a rebrand, a restatement, snapshot duplication | **code + a small curated file** | only visible across documents, not within one |
+| Auto-propose a restatement from a footnote; resolve a rebrand; cross-check the snapshot | **code** (+ a human-ratified file) | only visible across documents, not within one |
 
 **Why not regex:** metrics hide in prose and footnoted renames — there is no pattern to match.
 **Why not a vector DB / RAG:** the documents are small and known, and we know exactly which
@@ -64,8 +64,10 @@ PDFs ──pdfplumber──▶ per-doc LLM extraction ──▶ normalize + prov
    parentheses = negative, %, bps, x, months); periods normalized to `Qn YYYY`.
 3. **Verify provenance** (`src/provenance.py`): each `source_quote` must literally appear on its
    cited page and contain the value's digits — a soft flag per value, not the model's word.
-4. **Reconcile** (`src/reconcile.py` + `reconciliation.yaml`): entity resolution across the
-   FleetLink→Apex rebrand, cross-check against the manual snapshot, and surface restatements.
+4. **Reconcile** (`src/reconcile.py` + `reconciliation.yaml`): cross-check the automated numbers
+   against the manual snapshot; **auto-propose restatements** from each document's own footnotes
+   (with verbatim evidence + page); and apply the human-ratified cross-document facts — the
+   FleetLink→Apex rebrand alias and confirmed restatements — from a small, visible knowledge file.
 5. **Organize** (`src/table.py`): a long-format CSV (source of truth) and a Q2-2025 review pivot
    grouped by business model, with each cell flagged.
 
@@ -133,9 +135,12 @@ unchanged documents on re-extract (content-addressed incremental loading; named 
   metrics). See `ground_truth.csv`; the harness prints any miss by name.
 - **144/146** extracted values provenance-verified against their source page (the harness prints
   the 2 it flags — both off-period rows where the model embellished the quote).
-- Reconciliation: **recovered** TalentVault's headcount (which the manual snapshot dropped),
-  **surfaced** the PeopleFlow Q1 restatement (4.7M → 4.6M) as a conflict instead of silently
-  picking one, and confirmed the 4 snapshot figures **agree** with the standalone reports.
+- Reconciliation: the pipeline **recovered** TalentVault's headcount from the standalone report
+  (the manual snapshot dropped it) and computed that the 4 snapshot figures **agree** with the
+  standalone reports. It also **auto-proposes** the PeopleFlow Q1 restatement (4.7M → 4.6M)
+  directly from that document's own footnote — with the verbatim quote and page as evidence — and
+  a human ratifies it in `reconciliation.yaml` rather than the pipeline silently picking one value.
+  (The rebrand alias and snapshot baseline remain hand-curated; auto-proposing aliases is next.)
 
 ## Key decisions and assumptions
 
@@ -181,7 +186,9 @@ named below as next steps, not attempted.
   to the LLM. Build the LLM path first to get coverage; harden with rules where it pays.
 - **Strict, fail-closed provenance** (token-level digit verification) once whitespace artifacts are
   normalized away.
-- **Footnote-driven rename detection at scale** (the PoC reads them; production generalizes).
+- **Footnote-driven detection at scale:** the PoC already auto-proposes restatements from
+  footnotes (machine proposes → human ratifies); generalize the same propose-then-ratify pass to
+  rebrands/renames so entity aliases are proposed from the text rather than hand-curated.
 - **Productionizing into the data stack:** land `metrics_long.csv` in the warehouse as a dbt *source*,
   model the pivot/marts downstream, and attach the provenance + grain-uniqueness checks as dbt *tests*;
   orchestrate the per-doc extraction (Airflow/Dagster) with bounded concurrency; use the stored

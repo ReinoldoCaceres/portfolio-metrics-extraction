@@ -3,8 +3,9 @@
 Extract a comparable set of operating/financial metrics from a folder of heterogeneous
 portfolio-company PDF reports, with a provenance trail so each number can be trusted.
 
-> This README doubles as the written note: the approach, key decisions/assumptions, scope,
-> and next steps are all below.
+> The short written note (approach, what I built and why, assumptions, next steps) is in
+> **[NOTES.md](NOTES.md)**. This README is the full version — the same material plus run
+> instructions, the output data model, and decisions, all below.
 
 ## TL;DR
 
@@ -136,7 +137,7 @@ unchanged documents on re-extract (content-addressed incremental loading; named 
 - **144/146** extracted values provenance-verified against their source page (the harness prints
   the 2 it flags — both off-period rows where the model embellished the quote).
 - Reconciliation: the pipeline **recovered** TalentVault's headcount from the standalone report
-  (the manual snapshot dropped it) and computed that the 4 snapshot figures **agree** with the
+  (the manual snapshot dropped it) and computed that the five snapshot figures **agree** with the
   standalone reports. It also **auto-proposes** the PeopleFlow Q1 restatement (4.7M → 4.6M)
   directly from that document's own footnote — with the verbatim quote and page as evidence — and
   a human ratifies it in `reconciliation.yaml` rather than the pipeline silently picking one value.
@@ -166,7 +167,7 @@ unchanged documents on re-extract (content-addressed incremental loading; named 
 - **Provenance is a substring check** (the value's digits appear in the cited quote). It is
   deliberately loose for the PoC — it still caught 2/146 quotes the model partly embellished —
   and strict tokenized matching is named as a next step.
-- **Output is the Q2 2025 cross-section.** The ~13 non-Q2 PDFs are kept in the long CSV (and used
+- **Output is the Q2 2025 cross-section.** The 14 non-Q2 PDFs are kept in the long CSV (and used
   for entity/rebrand evidence) but filtered out of the pivot.
 - **The Portfolio Snapshot is treated as the artifact being automated**, used as a cross-check
   oracle (hand-keyed in `reconciliation.yaml`), not as a 24th data source.

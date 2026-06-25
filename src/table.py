@@ -186,7 +186,7 @@ def build_pivot(rows: list[dict], recon: dict, period: str = CROSS_SECTION_PERIO
 def save_outputs(rows: list[dict], pivot: pd.DataFrame, outdir: str | Path) -> None:
     outdir = Path(outdir)
     outdir.mkdir(exist_ok=True)
-    cols = ["company", "cohort", "currency", "canonical_metric", "metric_display",
+    cols = ["company", "company_key", "cohort", "currency", "canonical_metric", "metric_display",
             "raw_label", "value_raw", "value", "unit", "period", "period_basis",
             "source_type", "match_type", "provenance", "page", "source_doc",
             "source_quote", "note"]
